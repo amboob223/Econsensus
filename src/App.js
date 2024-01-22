@@ -7,31 +7,36 @@ import "./App.css"
 const About = () => {
   return (
     <>
-      <h1>Econsensus</h1>
-      {/* Your content for the About page */}
-      <section>
-  <h2>Revolutionizing Businesses at Econsensus</h2>
+    <section>
+  <h1>Abdul Mboob - CEO and Senior Blockchain Developer</h1>
 
+  <h2>About Me</h2>
   <p>
-    At Econsensus, we pride ourselves on being revolutionary. We employ proven methodologies while seamlessly integrating them with the future, ensuring that businesses stay at the forefront of new technology. Our approach is a harmonious blend of time-tested practices and cutting-edge innovation that consistently delivers results.
+    Hello, I'm Abdul Mboob, the CEO and Senior Blockchain Developer at Econsensus. I hold a Master's in Economics from Georgia State University and bring over 10 years of experience in R and econometrics. Additionally, I have over 3 years of expertise in web development and blockchain solutions, working with technologies like React, Node.js, JavaScript, and Solidity.
+  </p>
+
+  <h2>Econsensus</h2>
+  <p>
+    Welcome to Econsensus, where we are on a mission to revolutionize businesses by merging the old science of economics with the new science of blockchain. Our approach is rooted in proven methodologies while seamlessly integrating cutting-edge innovation, ensuring that businesses stay at the forefront of technology.
   </p>
 
   <p>
-    Our Econometrics division is spearheaded by seasoned economists with expertise in model formulation and empirical studies. We leverage these studies, aligning them with current trends, to gain a profound understanding of businesses and their related environments. This strategic insight empowers our clients to make optimal choices every time.
+    At Econsensus, we leverage econometrics, led by seasoned economists, to formulate models and conduct empirical studies. This strategic insight empowers our clients to make optimal choices in an ever-evolving business landscape.
   </p>
 
   <p>
-    Embracing blockchain technology is at the core of our mission. We firmly believe that blockchain is a transformative tool for businesses, offering solutions to reduce transaction costs, verification costs, and fostering trust within communities. Econsensus is dedicated to unlocking the full potential of blockchain, turning it into a competitive advantage for our clients across various scenarios.
+    Embracing blockchain technology is at the core of our mission. We believe that blockchain is a transformative tool, offering solutions to reduce transaction and verification costs while fostering trust within communities. Econsensus is dedicated to unlocking the full potential of blockchain, turning it into a competitive advantage for our clients.
   </p>
 
   <p>
-    The blockchain holds numerous underutilized use cases, and Econsensus is your guide to exploit all the synergies it offers for your business. This strategic utilization of blockchain becomes a distinctive advantage in most business scenarios, positioning you ahead of the curve.
+    Our goal is to bridge the gap between traditional and modern approaches, using the insights from econometrics and the innovative power of blockchain to arrive at sound consensuses. We aim to guide businesses in making the best decisions by combining the wisdom of the old with the efficiency of the new.
   </p>
 
   <p>
-    Complementing our services is a robust digital marketing team that excels in SEO, content marketing, SMM, and mobile development. We assist businesses in expanding their reach, boosting sales, and efficiently engaging with both existing customers and potential clients.
+    Complementing our services is a robust digital marketing team excelling in SEO, content marketing, SMM, and mobile development. We assist businesses in expanding their reach, boosting sales, and efficiently engaging with both existing customers and potential clients.
   </p>
 </section>
+
 
     </>
   );
@@ -85,7 +90,13 @@ const handleInputChange = (e) => {
       ...formData,
       [name]: value,
     });
-  };
+  }; // this is makeing an function called handle input change that takes an
+     // event parameter and puts it target in a variaobject hat takes and then
+     // in the setformdata we give it an object it uses the spread operatorto 
+     //repeat the value of the formdata and we erapolate from the varible the name as the key 
+     // 
+
+
 
   const handleSubmit = async(e) => {
     try {
