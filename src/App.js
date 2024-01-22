@@ -7,8 +7,7 @@ import "./App.css"
 const About = () => {
   return (
     <>
-      <h1>Econsensus</h1>
-      {/* Your content for the About page */}
+    
       <section>
   <h2>Revolutionizing Businesses at Econsensus</h2>
 
@@ -130,6 +129,7 @@ const handleInputChange = (e) => {
           <input
             type="text"
             name="name"
+            className="form-control"
             id="name"
             value={formData.name}
             onChange={handleInputChange}
@@ -142,6 +142,7 @@ const handleInputChange = (e) => {
             type="text"
             name="phone"
             id="phone"
+             className="form-control"
             value={formData.phone}
             onChange={handleInputChange}
             placeholder="Phone"
@@ -153,6 +154,7 @@ const handleInputChange = (e) => {
             type="text"
             name="email"
             id="email"
+             className="form-control"
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Email"
@@ -164,6 +166,7 @@ const handleInputChange = (e) => {
             type="text"
             name="industry"
             id="industry"
+             className="form-control"
             value={formData.industry}
             onChange={handleInputChange}
             placeholder="Industry"
@@ -176,6 +179,7 @@ const handleInputChange = (e) => {
             name="bproblem"
             id="bproblem"
             value={formData.bproblem}
+             className="form-control"
             onChange={handleInputChange}
             placeholder="Business Problem"
             rows={4}
