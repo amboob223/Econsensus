@@ -230,9 +230,6 @@ const Nav = () => {
         <li>
           <Link to="/help">How we can help</Link>
         </li>
-        <li>
-          <Link to="/contacts">Contacts</Link>
-        </li>
       </ul>
     </nav>
   );
@@ -248,7 +245,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          
           <Route path="/help" element={<Help />} />
         
         </Routes>
