@@ -27,16 +27,27 @@ to get the photos to work we had to import and then feed the source an object an
             - the diagnostic test
             -the implications
 
+
             - do a block chain overview
             - and webdev seo and content marketing too.
 
         - the goals these off days
+
             -design the site
-            - make my stock photos
+                    notes for site 
+                    1 -fix contacts part
+                    2 and get rid of teh redundancy in the how can we help 
+                    3 and flip colors 
+                    4 and make stock photos and scrolelr
+                     5   and and font
+                      6  and posiotion 
+                    7 and part for the blogs and works
+
+            
             -make nft minting site
+
             -resume
-            -put the site online
-            -in the about me we got to include info about me and my expertiese
+        
 
 
         -make nft for degress

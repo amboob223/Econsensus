@@ -35,38 +35,6 @@ const About = () => {
   );
 };
 
-const Service = () => {
-  return <> <h1>
-    this is the what we can do
-    </h1>
-  <section>
-  Elevate Decision-Making with Econometric Analysis: Harness the power of
-  econometric models, including regression, multivariate regression,
-  cross-section, and time series analysis, to address critical business
-  queries and forecast potential risks. Our adept team also tailors micro
-  and macro reports, providing data-driven insights customized for
-  effective management decision-making.
-</section>
-<br />
-<section>
-  Blockchain Solutions Tailored for Your Business: Explore the potential
-  of blockchain with our feasibility and use case studies, identifying
-  specific applications for your business. Following the study, our
-  experts can develop custom DAOs, DApps, tokens, or NFTs, enabling your
-  business to leverage the transformative capabilities of smart contracts
-  and blockchain technology.
-</section>
-<br />
-<section>
-  Holistic Business Development Services: Propel your business forward
-  with our comprehensive web development, SEO, social media management
-  (SMM), and content marketing solutions. From building a strong online
-  presence to executing successful marketing campaigns, our business
-  development offerings are designed to enhance your brand visibility and
-  drive growth.
-</section>
-  </>;
-};
 
 const Help = () => {
   const [formData,setFormData] = useState({
@@ -260,9 +228,6 @@ const Nav = () => {
           <Link to="/about">About us</Link>
         </li>
         <li>
-          <Link to="/services">What we do</Link>
-        </li>
-        <li>
           <Link to="/help">How we can help</Link>
         </li>
         <li>
@@ -281,7 +246,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Service />} />
+          
           <Route path="/help" element={<Help />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
