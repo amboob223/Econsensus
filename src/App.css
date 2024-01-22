@@ -1,4 +1,10 @@
 /* App.css */
+body {
+  background-color: #013364; /* Dark blue background color */
+  color: #fffff4; /* White text color */
+  font-family: 'Roboto', sans-serif; /* Use a Google Font or any other preferred font */
+}
+
 
 nav {
   display: flex;
@@ -25,7 +31,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
 a:hover {
