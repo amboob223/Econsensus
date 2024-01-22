@@ -91,9 +91,7 @@ const handleInputChange = (e) => {
   };
 
   return <>
-  <h1>
-      Econsensus helps by ...
-    </h1>
+  
   <div className="help-container">
 
   
@@ -202,8 +200,8 @@ const Contacts = () => {
 
 const Home = () => {
   return (
-    <>
-      <h1>Econsensus</h1>
+    <div className="home-content">
+      <img src={econsensusLogo} alt="osh"/>
       <p>
         Welcome to Econsensus, your boutique consultancy bridging blockchain and
         econometrics. Our unique approach combines these realms to deliver
@@ -212,7 +210,7 @@ const Home = () => {
         comprehensive content marketing, Econsensus is where innovation meets
         expertise.
       </p>
-    </>
+    </div>
   );
 };
 

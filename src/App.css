@@ -1,8 +1,12 @@
 /* App.css */
 body {
-  background-color: #013364; /* Dark blue background color */
+  background-color: #25323f; /* Dark blue background color */
   color: #fffff4; /* White text color */
   font-family: 'Roboto', sans-serif; /* Use a Google Font or any other preferred font */
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -41,9 +45,36 @@ a:hover {
 
 .help-container {
   display: flex;
+  min-height: 50vh;
+  margin: 3%;
+}
+
+
+
+
+header {
+  flex-grow: 1; /* Allow the header to take up the remaining vertical space */
 }
 
 section {
   flex: 1;
-  margin-right: 20px; /* Adjust margin as needed */
+  margin: 0 auto; /* Center the section horizontally */
+  max-width: 800px; /* Set a maximum width for better readability */
+  padding: 20px; /* Add padding for spacing inside the section */
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh; /* Ensure the content takes up at least the full height of the viewport */
+  max-width: 50%; /* Set the maximum width to be half of the viewport width */
+  margin: 0 auto; /* Center the content horizontally */
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; /* Adjust as needed */
+  background-color: #1d242f;
 }
