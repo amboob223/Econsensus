@@ -241,16 +241,23 @@ const Nav = () => {
 function App() {
   return (
     <div>
-      <Router>
+
+      <header>
+          <Router>
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           
           <Route path="/help" element={<Help />} />
-          <Route path="/contacts" element={<Contacts />} />
+        
         </Routes>
       </Router>
+      </header>
+      <footer>
+        <Contacts/>
+      </footer>
+    
     </div>
   );
 }
