@@ -17,13 +17,12 @@ const About = () => {
   </p>
 
   <p>
-    Our Econometrics division is spearheaded by seasoned economists with expertise in model formulation and empirical studies. We leverage these studies, aligning them with current trends, to gain a profound understanding of businesses and their related environments. This strategic insight empowers our clients to make optimal choices every time.
+    Our Econometrics division is spearheaded by seasoned economists with expertise in model formulation and empirical studies. We leverage these studies, aligning them with current trends, to gain a profound understanding of businesses and their related environments. This strategic insight empowers our clients to make optimal choices every time. our models follow the main econmetric assumptions of homoskecaicity,linearity,indepndance of errors and normality of errors
   </p>
 
-  <p>
-    Embracing blockchain technology is at the core of our mission. We firmly believe that blockchain is a transformative tool for businesses, offering solutions to reduce transaction costs, verification costs, and fostering trust within communities. Econsensus is dedicated to unlocking the full potential of blockchain, turning it into a competitive advantage for our clients across various scenarios.
-  </p>
-
+<p>
+    The integration of blockchain technology constitutes a central tenet of our organizational mission. We steadfastly affirm that blockchain stands as a transformative instrument for businesses, presenting solutions to diminish transaction costs, verification expenses, and cultivating trust within communities. Econsensus is committed to realizing the complete potential of blockchain, positioning it as a competitive advantage for our clients across diverse scenarios.
+</p>
   <p>
     The blockchain holds numerous underutilized use cases, and Econsensus is your guide to exploit all the synergies it offers for your business. This strategic utilization of blockchain becomes a distinctive advantage in most business scenarios, positioning you ahead of the curve.
   </p>
