@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import econsensusLogo from './Econsensus.png'; // Adjust the path
 import "./App.css"
-
+import photo1 from "./images/econmetrics.jpg";
+import photo2 from "./images/bitcoin.jpg";
+import photo3 from "./images/dev.jpg";
 const About = () => {
   return (
     <>
@@ -199,9 +201,10 @@ const Contacts = () => {
 //will describe some of the services and things we have done 
 
 const Scroller = () => {
+
   const photos = [
-  
-    // Add more image URLs as needed
+    photo1,photo2,photo3
+   
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -218,7 +221,7 @@ const Scroller = () => {
 
   return (
     <div>
-      <img src={photos[currentIndex]} alt={"hh"} />
+      <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} />
 
       <div>
         <button onClick={handlePrevClick}>Previous</button>
