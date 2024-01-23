@@ -202,16 +202,16 @@ const Contacts = () => {
     </ul></>;
 };
 
+//im about to make a component for the scorller that will show some stock phitos and they will describe some of the services and things we have done 
+
+
 const Home = () => {
   return (
     <div className="home-content">
       <img src={econsensusLogo} alt="osh"/>
       <p>
-        Welcome to Econsensus, your boutique consultancy bridging blockchain and
-        econometrics. Our unique approach combines these realms to deliver
-        tailored solutions. Specializing in Econometric services,
-        blockchain-enhanced business processes, DApp development, and
-        comprehensive content marketing, Econsensus is where innovation meets
+        Welcome to Econsensus, your in house economist and software developer. Specializing in Econometric services,
+        blockchain-enhanced processes, and comprehensive web development, Econsensus is where innovation meets
         expertise.
       </p>
     </div>
@@ -221,7 +221,7 @@ const Home = () => {
 const Nav = () => {
   return (
     <nav>
-      <img   src={econsensusLogo} alt="smasg" className="logo"/>
+     <Link to="/"><img   src={econsensusLogo} alt="smasg" className="logo"/> </Link> 
       <ul>
         <li>
           <Link to="/">Home</Link>

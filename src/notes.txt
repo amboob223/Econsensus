@@ -35,19 +35,15 @@ to get the photos to work we had to import and then feed the source an object an
 
             -design the site
                     notes for site 
-                    1 -fix contacts part
-                    2 and get rid of teh redundancy in the how can we help 
-                    3 and flip colors 
+
                     4 and make stock photos and scrolelr
-                     5   and and font
-                      6  and posiotion 
                     7 and part for the blogs and works
 
             
             -make nft minting site
-
             -resume
         
+           
 
 
         -make nft for degress

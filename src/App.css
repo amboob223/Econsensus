@@ -14,8 +14,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 7px 20px;
   background-color: #f0f0f0;
+  text-align: center;
 }
 
 .logo {
@@ -47,6 +48,10 @@ a:hover {
   display: flex;
   min-height: 50vh;
   margin: 3%;
+}
+
+.help-container>p{
+  text-indent: 5%;
 }
 
 
