@@ -9,21 +9,14 @@ const About = () => {
     <>
     
       <section>
-  <h2>Revolutionizing Businesses at Econsensus</h2>
-
-  <p>
-    At Econsensus, we pride ourselves on being revolutionary. We employ proven methodologies while seamlessly integrating them with the future, ensuring that businesses stay at the forefront of new technology. Our approach is a harmonious blend of time-tested practices and cutting-edge innovation that consistently delivers results.
-  </p>
+  <h2>Empowering Decisions</h2>
 
 <p>
-    Led by seasoned economists with specialized proficiency in model formulation and empirical studies, our Econometrics division is dedicated to leveraging these studies. We align them with current trends to develop a comprehensive understanding of businesses and their respective environments. This strategic insight equips our clients with the ability to make optimal decisions consistently. Our models adhere to the fundamental econometric assumptions of homoscedasticity, linearity, independence of errors, and normality of errors.
+    Our Econometrics department is led by seasoned economists who specialize in model formulation and empirical studies.
+    Our models adhere to the fundamental econometric assumptions of homoscedasticity, linearity, independence of errors, and normality of errors.
 </p>
 <p>
-    The integration of blockchain technology constitutes a central tenet of our organizational mission. We steadfastly affirm that blockchain stands as a transformative instrument for businesses, presenting solutions to diminish transaction costs, verification expenses, and cultivating trust within communities. Econsensus is committed to realizing the complete potential of blockchain, positioning it as a competitive advantage for our clients across diverse scenarios.
-</p>
-  <p>
-    The blockchain holds numerous underutilized use cases, and Econsensus is your guide to exploit all the synergies it offers for your business. This strategic utilization of blockchain becomes a distinctive advantage in most business scenarios, positioning you ahead of the curve.
-  </p>
+Econsensus integrates blockchain for transformative business solutions, reducing costs and fostering trust. We guide businesses to exploit blockchain synergies, gaining a distinctive edge in diverse scenarios. </p>
 
   <p>
     Complementing our services is a robust digital marketing team that excels in SEO, content marketing, SMM, and mobile development. We assist businesses in expanding their reach, boosting sales, and efficiently engaging with both existing customers and potential clients.
