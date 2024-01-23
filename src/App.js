@@ -196,28 +196,72 @@ const handleInputChange = (e) => {
 
 const Contacts = () => {
   return <><ul>
-        <li>twitter</li>
-        <li>linkedin</li>
+        <li>Twitter</li>
+        <li>Linkedin</li>
         <li>Tiktok</li>
     </ul></>;
 };
 
-//im about to make a component for the scorller that will show some stock phitos and they will describe some of the services and things we have done 
+//im about to make a component for the scorller that will show some stock phitos and they 
+//will describe some of the services and things we have done 
 
+const Scroller = () => {
+  const photos = [
+  
+    // Add more image URLs as needed
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? photos.length - 1 : prevIndex - 1));
+  };
+
+  const handleNextClick = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === photos.length - 1 ? 0 : prevIndex + 1));
+    console.log(currentIndex)
+    console.log(photos)
+  };
+
+  return (
+    <div>
+      <img src={photos[currentIndex]} alt={"hh"} />
+
+      <div>
+        <button onClick={handlePrevClick}>Previous</button>
+        <button onClick={handleNextClick}>Next</button>
+      </div>
+    </div>
+  );
+};
+
+
+
+
+ 
 
 const Home = () => {
   return (
     <div className="home-content">
       <img src={econsensusLogo} alt="osh"/>
-      <p>
-        Welcome to Econsensus, your in house economist and software developer. Specializing in Econometric services,
-        blockchain-enhanced processes, and comprehensive web development, Econsensus is where innovation meets
-        expertise.
-      </p>
+      <table>
+        <tr>
+          <td>
+            <p style={{ fontSize: '3em' }}>
+             Your in-house econometrician and software developer.
+            </p>
+             <p>
+              Specializing in Econometric services, blockchain-enhanced processes, and comprehensive web development, Econsensus is where innovation meets expertise.
+            </p>
+          </td>
+          <td>
+           <Scroller/>
+          </td>
+        </tr>
+      </table>
     </div>
   );
 };
-
 const Nav = () => {
   return (
     <nav>

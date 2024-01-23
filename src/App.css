@@ -83,3 +83,8 @@ footer {
   min-height: 10vh; /* Adjust as needed */
   background-color: #1d242f;
 }
+/* styles.css */
+
+.larger-text {
+  font-size: 2em;
+}
