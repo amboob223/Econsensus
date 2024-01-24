@@ -97,7 +97,7 @@ const handleInputChange = (e) => {
 
   <h3>Elevated Decision-Making through Data-Driven Insights</h3>
   <p>
-    Harness the power of advanced econometric models, mircoeconomic and marco economic reports to help you make the most informed decison everytime.
+    Harness the power of advanced data collection, survey creation,econometric models, and comprehensive economic reports to help you make the most informed decison everytime.
   </p>
 
   <h3>Blockchain Solutions Tailored for Your Business</h3>
@@ -223,8 +223,8 @@ const Scroller = () => {
       <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} />
 
       <div>
-        <button  className="btn btn-warning" onClick={handlePrevClick}>Previous</button>
-        <button className="btn btn-warning" onClick={handleNextClick}>Next</button>
+        <button className="btn btn-warning" onClick={handlePrevClick}>Previous</button>
+        <button  className="btn btn-warning" onClick={handleNextClick}>Next</button>
       </div>
     </div>
   );
