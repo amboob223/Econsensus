@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import econsensusLogo from './Econsensus.png'; // Adjust the path
+import econsensusLogo from './images/Econsensus.png'; // Adjust the path
 import "./App.css"
 import photo1 from "./images/econmetrics.jpg";
 import photo2 from "./images/bitcoin.jpg";
@@ -91,15 +91,13 @@ const handleInputChange = (e) => {
   
   
     <section>
-  <h2>Unlocking Growth and Innovation with Econsensus Services</h2>
+  <h2>Econsensus helps with..</h2>
+  <br/>
  
-  <p>
-    In the rapidly evolving landscape of modern business, partnering with Econsensus can provide your company with a competitive edge and unlock various growth opportunities. Our tailored services at the intersection of blockchain and econometrics offer unique advantages:
-  </p>
 
   <h3>Elevated Decision-Making through Data-Driven Insights</h3>
   <p>
-    Harness the power of advanced econometric models, including regression, multivariate regression, cross-section, and time series analysis. Our adept team tailors micro and macro reports, providing your management with data-driven insights for informed decision-making.
+    Harness the power of advanced econometric models, mircoeconomic and marco economic reports to help you make the most informed decison everytime.
   </p>
 
   <h3>Blockchain Solutions Tailored for Your Business</h3>
@@ -113,7 +111,8 @@ const handleInputChange = (e) => {
   </p>
 
   <p>
-    At Econsensus, we pride ourselves on bridging the gap between traditional business practices and cutting-edge technologies. Our services are designed to empower your company, fostering innovation, efficiency, and sustained success in today's dynamic market.
+Our services are designed to empower your company, fostering innovation, efficiency, and sustained success in today's dynamic market.
+    Please feel free to complete the form and a representative will be with you shortly.
   </p>
 </section>
 
