@@ -223,8 +223,8 @@ const Scroller = () => {
       <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} />
 
       <div>
-        <button onClick={handlePrevClick}>Previous</button>
-        <button onClick={handleNextClick}>Next</button>
+        <button  className="btn btn-warning" onClick={handlePrevClick}>Previous</button>
+        <button className="btn btn-warning" onClick={handleNextClick}>Next</button>
       </div>
     </div>
   );
