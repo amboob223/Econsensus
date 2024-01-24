@@ -88,3 +88,12 @@ footer {
 .larger-text {
   font-size: 2em;
 }
+
+.button-container {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Additional styling if necessary */
+.btn {
+  margin-right: 10px; /* Adjust the right margin as needed */
+}
