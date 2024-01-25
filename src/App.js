@@ -243,7 +243,7 @@ const Home = () => {
         <tr>
           <td>
             <p style={{ fontSize: '3em' }}>
-             Your in-house econometrician and software developer.
+             Your in-house economist and software developer.
             </p>
              <p>
               Specializing in Econometric services, blockchain-enhanced processes, and comprehensive web development, Econsensus is where innovation meets expertise.
