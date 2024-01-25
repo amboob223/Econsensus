@@ -217,7 +217,6 @@ const Scroller = () => {
     console.log(currentIndex)
     console.log(photos)
   };
-
   return (
     <div>
       <Link to="/help"> <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} /></Link>
@@ -256,24 +255,73 @@ const Home = () => {
     </div>
   );
 };
+
+
 const Nav = () => {
-  return (
-    <nav>
-     <Link to="/"><img   src={econsensusLogo} alt="smasg" className="logo"/> </Link> 
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About us</Link>
-        </li>
-        <li>
-          <Link to="/help">How we can help</Link>
-        </li>
-      </ul>
-    </nav>
+  return (<div >
+
+ 
+    <nav  style={{ marginRight: '10px', justifyContent:"space-between" }} className="navbar navbar-expand-lg navbar-light bg-light">
+     
+         <Link to="/">
+        <img src={econsensusLogo} alt="smasg" className="logo" />
+      </Link>
+     
+    
+     <div>
+
+    
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link">
+              About us
+            </Link>
+          </li>
+          <li className="nav-item dropdown">
+            <Link
+              className="nav-link dropdown-toggle"
+              to="/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+             ourWork
+            </Link>
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <Link to="/" className="dropdown-item">
+                Works
+              </Link>
+              <div className="dropdown-divider"></div>
+              <Link to="/" className="dropdown-item">
+                Blog
+              </Link>
+              
+            
+            </div>
+          </li>
+          <li className="nav-item">
+            <Link to="/help" className="nav-link">
+              How we can help
+            </Link>
+          </li>
+        </ul>
+      </div>
+       </div>
+    </nav> 
+    </div>
   );
 };
+
+
 
 function App() {
   return (

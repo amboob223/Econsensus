@@ -55,4 +55,152 @@ The analysis indicates that the policy_change variable is not statistically sign
 9. Recommendations:
 Further research and data collection are recommended to explore additional factors that may influence revenue in the context of cake sales in jails.
 
- and a micro example
+ and we would give them a  micro and maco report simliar
+ - a feasabilty test to see if blockchcian is good for them 
+ -build them a cake ordering app or daap
+
+
+ example 
+
+ Econometric Analysis Report
+Objective
+The objective of this econometric analysis is to investigate the impact of various factors on the revenue of a vegan restaurant. The study focuses on understanding how the closure status of a nearby mall, time-related factors, and economic indicators influence the restaurant's revenue.
+
+Methodology
+Model Specification: A linear regression model was specified to examine the relationship between the dependent variable (VeganRevenue) and independent variables (ClosureStatus, Months, UnemploymentRate, IncomeLevels).
+Data: Simulated data containing 100 observations was used for analysis.
+Key Findings
+Coefficients
+Intercept:
+
+Estimate: 
+982.5
+982.5
+Interpretation: The estimated mean revenue of the vegan restaurant when all other independent variables are zero.
+ClosureStatus:
+
+Estimate: 
+−
+301.6
+−301.6
+Interpretation: On average, the closure of the mall is associated with a decrease in revenue by 
+301.6
+301.6 units.
+Months:
+
+Estimate: 
+12.84
+12.84
+Interpretation: On average, for each additional month, the revenue increases by approximately 
+12.84
+12.84 units.
+UnemploymentRate:
+
+Estimate: 
+2.342
+2.342
+P-value: 
+0.511
+0.511
+Interpretation: The variable is not statistically significant in explaining the variation in revenue.
+IncomeLevels:
+
+Estimate: 
+0.09964
+0.09964
+Interpretation: On average, for each unit increase in income levels, the revenue increases by 
+0.09964
+0.09964 units.
+Significance Codes
+Significance codes are denoted by stars. In this analysis, ClosureStatus, Months, and IncomeLevels have high significance (***), indicating a significant impact on revenue.
+Model Fit
+Residual Standard Error: 
+52.99
+52.99
+Multiple R-squared: 
+0.9977
+0.9977
+Adjusted R-squared: 
+0.9976
+0.9976
+F-statistic: 
+1.031
+�
++
+04
+1.031e+04
+P-value: 
+<
+2.2
+�
+−
+16
+<2.2e−16
+Conclusion
+The regression model suggests that the closure status of the mall, time-related factors (Months), and income levels significantly influence the revenue of the vegan restaurant. The model explains a high proportion of the variability in revenue, and the overall model is statistically significant.
+
+Recommendations
+Consider strategies to mitigate the negative impact of mall closures on foot traffic and customer engagement.
+Leverage the positive influence of increasing income levels on revenue by targeting higher-income demographics.
+Limitations and Considerations
+The study is based on simulated data, and results may vary in a real-world context.
+Other unobserved factors may also influence the restaurant's revenue.
+
+
+
+
+
+
+    -for this client we would also build them app that allows them to engage with customers  maybe an online order app
+
+    -make an nft collection to build community and get higher income indiviuals 
+    -Mitigating the Negative Impact of Mall Closures:
+Mobile Vegan Pop-ups:
+
+Launch mobile vegan pop-ups in strategic locations where foot traffic remains high despite mall closures. Collaborate with local events, markets, or popular public spaces.
+Collaborative Events:
+
+Partner with local businesses or community organizations to organize collaborative events. This could include joint promotions, discounts, or themed events to attract a shared audience.
+Subscription Services:
+
+Introduce a subscription-based meal delivery service targeting nearby residential areas. Offer convenience and a taste of your vegan offerings directly to customers' doorsteps.
+Social Media Campaigns:
+
+Leverage social media platforms to create engaging campaigns. Encourage customers to share their experiences, photos, and reviews. Consider running contests or giveaways to generate buzz.
+Online Cooking Classes:
+
+Host virtual cooking classes or workshops featuring vegan recipes. This not only promotes your restaurant but also engages the community in a fun and educational way.
+Leveraging the Positive Influence of Increasing Income Levels:
+Premium Tasting Events:
+
+Organize exclusive tasting events or themed dinners targeting higher-income demographics. Highlight unique and premium vegan dishes, offering a gourmet experience.
+VIP Memberships:
+
+Introduce a VIP membership program with exclusive benefits for higher-income customers, such as priority reservations, special discounts, or personalized menu options.
+Collaborate with Health and Wellness Influencers:
+
+Partner with health and wellness influencers who resonate with a higher-income audience. Have them promote your vegan offerings through sponsored content or collaborations.
+Corporate Catering Packages:
+
+Create specialized catering packages for corporate events and upscale gatherings. Emphasize the health benefits and sustainability of your vegan menu to appeal to a discerning clientele.
+Artisanal Vegan Products:
+
+Develop and sell artisanal vegan products or merchandise associated with your restaurant. This could include premium sauces, condiments, or branded merchandise that appeals to a higher-income customer base.
+
+so we would give them the econ report with the graphs tailored with there data and the recomendations
+as well as price them for the technical solutions we can help with 
+
+
+-we can charge for survery and data collection 
+-
+
+so this might be how we do it we do a study to start then give you some recomendation from which we upsell
+   
+    -we upsell you the daapp or app 
+    -we upsell videos 
+
+-it still valuable because most dont make the connection between data colelction and ai 
+-we still put the apps and dapps together and 
+-we have a video componnet too so no easily replaceable
+
+

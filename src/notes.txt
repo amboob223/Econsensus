@@ -33,10 +33,6 @@ to get the photos to work we had to import and then feed the source an object an
 
         - the goals these off days
 
-            -design the site
-                    notes for site 
-
-                    4 and make stock photos and scrolelr
                     7 and part for the blogs and works
 
             
@@ -48,3 +44,43 @@ to get the photos to work we had to import and then feed the source an object an
 
         -make nft for degress
         -gsu and make a business making nft degrees for studemts that they can upload to there wallet
+
+
+        today 
+            -we got to make the blog and works part 
+            -we got to make the dropdwons
+            -we got to make stock photos for both parts 
+            -when we get business account we got to switch over subscriptions and get email hosting and make social media shit
+            -we got to make the social  media too.
+                blog     
+                -how the closeure of the mall would affect healthful essence
+                        -talk about how you got the data 
+                        - how long we colelcted data
+                        -whats the implications
+                        -show knowledge 
+                -how trade policy affects homlesness
+
+                works 
+                    -show wocktan
+                    -show clublink
+                    -the review app
+                    -the for blackparty
+
+            revenue sources
+                -apps and dapps
+                -content videos
+                -Econeometric services 
+                    -survey creation 
+                    -data collection
+                    -regression and interpretation
+                    -solutions
+                
+            work    
+                -data collection and entry
+                -Economist do the regression interpret results
+                -lead generation and cold calls and social media
+                -blockchain and web dev
+                -video and creative director
+
+            * econometricans look for causality
+     
