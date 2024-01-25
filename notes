@@ -32,7 +32,66 @@ notes for site
    -and make stock photos 
             -3 stock photos 
                   -one for the current blog
-                  -one for somethihng we offer
-                  -another for something we offer 
+                  
 
    and part for the blogs and works
+
+
+
+   how to read residuals
+
+In your scenario, the residuals represent the differences between the actual revenue values and the values predicted by the regression model. Let's take a look at the residual values:
+
+makefile
+Copy code
+Residuals:
+         1          2          3          4          5 
+ 1.000e+01  5.779e-16 -1.000e+01  3.000e+01 -3.000e+01 
+Each residual corresponds to a specific observation in your dataset (1 to 5). The large numbers indicate the magnitude of the differences between the predicted and actual revenue values for those observations.
+
+Observation 1: The residual is 
+1.000
+×
+10
+1.000×10, indicating that the predicted revenue was 10 units less than the actual revenue.
+
+Observation 2: The residual is very close to zero (
+5.779
+×
+1
+0
+−
+16
+5.779×10 
+−16
+ ), indicating that the predicted and actual revenue values are very close.
+
+Observation 3: The residual is 
+−
+1.000
+×
+10
+−1.000×10, indicating that the predicted revenue was 10 units greater than the actual revenue.
+
+Observation 4: The residual is 
+3.000
+×
+10
+3.000×10, indicating that the predicted revenue was 30 units greater than the actual revenue.
+
+Observation 5: The residual is 
+−
+3.000
+×
+10
+−3.000×10, indicating that the predicted revenue was 30 units less than the actual revenue.
+
+The residuals, in essence, show how well your regression model predicts the observed data. In some cases, large residuals might suggest that the model is not capturing certain patterns or factors that influence the revenue. It's important to investigate further and possibly refine the model if necessary. Additionally, with a small dataset, individual observations can have a larger impact on the residuals.
+
+
+cant trust if p value high
+
+
+now we learning 
+      -prmopt engineering : act as an eonomist or feed it a transcript 
+      -fininsh teh blocckchan bootcamp

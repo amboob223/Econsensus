@@ -102,7 +102,7 @@ const handleInputChange = (e) => {
 
   <h3>Blockchain Solutions Tailored for Your Business</h3>
   <p>
-    Explore the potential of blockchain with our feasibility and use case studies. Identify specific applications for your business, and let our experts develop custom DAOs, DApps, tokens, or NFTs. Leverage the transformative capabilities of smart contracts and blockchain technology to enhance operational efficiency and security.
+    Explore the potential of blockchain with our feasibility and use case studies. Identify specific applications for your business, and let our experts develop custom DAOs, DApps, custom tokens, or NFTs. Leverage the transformative capabilities of smart contracts and blockchain technology to enhance operational efficiency and security.
   </p>
 
   <h3>Holistic Business Development Services</h3>
