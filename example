@@ -1,54 +1,5 @@
-question:cakes in pr
-it wont affect as the p value small not significant
-
-structure
-    Creating an econometric report involves presenting your findings in a structured and clear manner. Below is an example outline for an econometric report based on the analysis we performed. Adjust the content based on your specific data and results:
-
-Title:
-Econometric Analysis of the Impact of Policy Change on Revenue from Cake Sales in Jails
-
-Executive Summary:
-Provide a concise summary of the key findings and implications of the analysis.
-
-1. Introduction:
-Briefly introduce the purpose of the study.
-Describe the dataset and variables used in the analysis.
-2. Data Description:
-Provide an overview of the dataset, including the sample size, variable descriptions, and any data preprocessing steps.
-3. Model Specification:
-Present the regression model used, including the dependent variable, independent variable(s), and any assumptions made.
-Highlight the significance of the model in the context of the research question.
-4. Regression Results:
-Display the coefficients, standard errors, t-values, and p-values for each variable in the model.
-Interpret the coefficients, especially focusing on the policy_change variable.
-5. Residual Analysis:
-Discuss the residuals and their implications.
-Check for heteroscedasticity, normality, and other assumptions.
-6. R-squared and Model Fit:
-Interpret the Multiple R-squared and Adjusted R-squared values.
-Discuss the overall fit of the model.
-7. Scatter Plot and Regression Line:
-Present the scatter plot with the regression line.
-Discuss any visual patterns or insights observed.
-8. Conclusion:
-Summarize the main findings and their significance.
-Discuss the limitations of the analysis.
-Suggest areas for further research.
-9. Recommendations:
-If applicable, provide recommendations based on the analysis.
-Appendices:
-Include additional details, code snippets, or supplementary information.
-References:
-List any references or sources used in the analysis.
-
-Remember to use clear language, tables, and visualizations to enhance the readability of the report. Adjust the content and structure based on the specific details of your analysis and the requirements of your client.
-
-
-
-
-this is an example 
-   
-    Econometric Analysis of the Impact of Policy Change on Revenue from Cake Sales in Jails
+example 
+     Econometric Analysis of the Impact of Policy Change on Revenue from Cake Sales in Jails
 Executive Summary:
 This econometric analysis aimed to investigate the impact of a policy change allowing the selling of cakes among inmates on the revenue from cake sales in jails. The study utilized a linear regression model to explore the relationship between revenue and the binary variable representing the policy change. Findings suggest that the policy_change variable is not statistically significant in predicting revenue.
 
@@ -66,7 +17,7 @@ Showing 1 to 5 of 5 entries, 2 total columns
 
 
 
-
+this is teh graph
 
 
 

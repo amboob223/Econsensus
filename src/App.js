@@ -220,8 +220,7 @@ const Scroller = () => {
 
   return (
     <div>
-      <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} />
-
+      <Link to="/help"> <img src={photos[currentIndex]} alt={"hh"} style={{ width: "310px", height: "310px" }} /></Link>
       <div>
         <button className="btn btn-warning" onClick={handlePrevClick}>Previous</button>
         <button  className="btn btn-warning" onClick={handleNextClick}>Next</button>
