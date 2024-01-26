@@ -49,6 +49,9 @@ Residuals:
  1.000e+01  5.779e-16 -1.000e+01  3.000e+01 -3.000e+01 
 Each residual corresponds to a specific observation in your dataset (1 to 5). The large numbers indicate the magnitude of the differences between the predicted and actual revenue values for those observations.
 
+
+when importing the data tables we have to use the data tables using the codes
+
 Observation 1: The residual is 
 1.000
 ×

@@ -97,3 +97,19 @@ footer {
 .btn {
   margin-right: 10px; /* Adjust the right margin as needed */
 }
+.blog-post {
+  color: #333; /* Adjust text color as needed */
+}
+
+.blog-post pre {
+  color: white;
+  background-color: #333; /* Set background color for better readability */
+  padding: 10px;
+  overflow-x: auto;
+}
+.work-container {
+  color: #fbf9f9; /* Adjust text color as needed */
+  max-width: 800px; /* Adjust the maximum width to your design preference */
+  margin: 0 auto;
+  padding: 20px;
+}

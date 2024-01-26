@@ -1,0 +1,80 @@
+videonotes
+    we got to set up operational process :
+        -people go on the site schedule a consultation
+                -we get back to them to discus the details
+                -we do the report
+                -send it back with recomendations
+                -if they want a tech solution we build it 
+                -send it back
+    marketing process:
+                - we use social media to market to other small businesses
+                        -starting social media page
+                        -creating blog post to create a problem and offer the solution 
+                        -create ads 
+                -we use cold calling to businesses to speak with managment to inform them of our services
+                        -call busniess we feel like would benefit or be good case studies 
+                        -because a majority of are services can be offered remoteley we will advertise in remote markets too
+                -we attend networking events where business owners would frequesnt
+                -business cards and flyers
+                -do cross promotion through probono work
+                -host meetup events
+
+    sales processes
+                revenue sources we need pay first before anyservice is rendered.
+                -apps and dapps:
+                        -the way we get paid is if a client request an app or there solution requires it we make it for a fixed rate of $100
+                        -feasablilty test
+                        -documentation on the app creation.
+                -content videos: we can shoot the content an like an add or make a beat for a fixed rate of $100
+                -Econeometric services 
+                    -survey creation :got to know null 
+                    -data collection: indexing,assumptions 
+                    -regression and interpretation:makereports and tell people what it means
+                    -recomendation:  I will make the report including gathering and interpreting the data using econoemetric methods and cites for a rate depending on the scope of study but a base of $100
+
+        *we also provide a half off discount on services if paid inbitcoin instead 
+        -we take cashapp,paypal or cash.
+   
+    and 
+
+    set up communication structure: 
+                -customers can conyact the Ceo of econsensus by phone,
+                -we will set up an email portal @econsense.domainname
+                -we will make a twitter,tiktok,instagram,youtube
+                
+    and financial infrastructre:
+                -we will have buttons on our pages to offer consumers the chocice to pay in btc as well as eth 
+                -we will acept paypal 
+                -we will accept cash app
+                -we accept cash
+
+                * we keeping track of our revenue by using postgres or excell 
+
+
+    determine market mix 
+        product: Economic reports and Applications for solutions for businesses
+        price: $100 base half off if with bit
+        place: remote but localbusineses too 
+        promotion: we promote to local businesses and business in capital intensive industry like banking  construction etc. but mostly busines to business
+                  -we also promote to busineess that want to implement blockcchain technololgy in there business
+    market content: we use our communictaion processes,buy adds,go network,cold call,guerilla market
+    grow audience 
+
+
+**we got to learn excell for transaction
+        -we got to get bcards
+                -deisgn on canva
+        -set email
+                -buy domain on godady and set up 
+        -make stock photos on canva for blog post and works
+        -we got get the rendering from render for the server
+
+
+        api key:
+                8-UVCbv3NJzxkNdLg1rv
+        
+        if we missing data a techniques is imputation techniques
+
+        blog idea do a report about facebook and when you should invest based off yhe data and econometrics
+        or 
+        

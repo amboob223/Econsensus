@@ -1,4 +1,4 @@
-CREATE DATABASE econsensus
+CREATE DATABASE econsensus;
 CREATE TABLE HELP (
     name VARCHAR(255),
     phone INTEGER,

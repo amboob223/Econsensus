@@ -48,12 +48,14 @@ to get the photos to work we had to import and then feed the source an object an
 
         today 
             -we got to make the blog and works part 
-            -we got to make the dropdwons
+          
             -we got to make stock photos for both parts 
             -when we get business account we got to switch over subscriptions and get email hosting and make social media shit
             -we got to make the social  media too.
-                blog     
-                -how the closeure of the mall would affect healthful essence
+                blog make it about blockchhaiin type stuff 
+                and design business cards 
+         
+                -
                         -talk about how you got the data 
                         - how long we colelcted data
                         -whats the implications
@@ -61,19 +63,24 @@ to get the photos to work we had to import and then feed the source an object an
                 -how trade policy affects homlesness
 
                 works 
-                    -show wocktan
-                    -show clublink
-                    -the review app
-                    -the for blackparty
+                    -show wocktan : make like we made for a client who wanted an app to teach his child why traveling
+                    -show clublink:" we made for a local promoter
+                    -the review app:" a blockchain solution we made fr a start up 
+                    -the for blackparty: a token that lets you buy bp nfts 
 
             revenue sources
+
                 -apps and dapps
-                -content videos
+
+
+                -content videos: we can shoot the content an
+
+
                 -Econeometric services 
-                    -survey creation 
-                    -data collection
-                    -regression and interpretation
-                    -solutions
+                    -survey creation :got to know null 
+                    -data collection: indexing,assumptions 
+                    -regression and interpretation:makereports and tell people what it means
+                    -recomendation:
                 
             work    
                 -data collection and entry
@@ -84,3 +91,4 @@ to get the photos to work we had to import and then feed the source an object an
 
             * econometricans look for causality
      
+     make blog part and part for works
