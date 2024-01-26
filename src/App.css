@@ -112,6 +112,7 @@ footer {
   max-width: 800px; /* Adjust the maximum width to your design preference */
   margin: 0 auto;
   padding: 20px;
+  margin-top: 5%;
 }
 .blog-container {
   display: flex;
@@ -127,6 +128,7 @@ footer {
 
 .blog-content {
   flex: 1; /* Take remaining space */
+  margin-top: 5%;
 }
 
 /* Add more styling as needed */

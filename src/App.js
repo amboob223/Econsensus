@@ -264,108 +264,55 @@ const Home = () => {
 
 const Blog = () => {
   return (
-    <>
-    <img src={blogImage} alt="Blog Cover" className="blog-cover-image" style={{ height: "200px", width: "auto" }}  />
-      <h1>Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis</h1>
-      <h2>Navigating Trading Strategies with Statistical Precision</h2>
+    <div className="blog-container">
+      <img
+        src={blogImage}
+        alt="Blog Cover"
+        className="blog-cover-image"
+        style={{ height: "200px", width: "auto", float: "left", marginRight: "20px" }}
+      />
+      <div className="blog-content">
+        <h1>Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis</h1>
+        <h2>Navigating Trading Strategies with Statistical Precision</h2>
 
-      <p>In the fast-paced world of financial markets, every tick and fluctuation in prices can have a profound impact on trading decisions. Traders and investors are constantly on the lookout for tools that can provide meaningful insights into market dynamics, allowing them to make informed decisions.</p>
+        <p>
+          In the fast-paced world of financial markets, every tick and fluctuation in prices can have a profound impact on trading decisions. Traders and investors are constantly on the lookout for tools that can provide meaningful insights into market dynamics, allowing them to make informed decisions.
+        </p>
 
-      <p>In this blog post, we delve into the results of a comprehensive regression analysis conducted on financial data, exploring the relationships between various market indicators and the closing price. The study aims to unlock predictive insights that could guide trading strategies and risk management.</p>
+        <p>
+          In this blog post, we delve into the results of a comprehensive regression analysis conducted on financial data, exploring the relationships between various market indicators and the closing price. The study aims to unlock predictive insights that could guide trading strategies and risk management.
+        </p>
 
-      <h3>Understanding the Coefficients: Keys to Market Behavior</h3>
+        {/* ... (Rest of your content) */}
 
-      <p>The regression analysis focused on four key variables: Open, High, Low, and Volume. The coefficients associated with these variables shed light on how changes in each can influence the closing price. Let's unravel the findings:</p>
+        <h3>Trading Strategies and Risk Management: A Statistical Compass</h3>
+        <p>
+          Armed with these insights, traders can develop and fine-tune their strategies:
+        </p>
 
-      <pre>
-        {`Call:
-lm(formula = Close ~ Open + High + Low + Volume, data = facebook)
+        <p>
+          <strong>Contrarian Approach to Opening Prices:</strong> The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.
+        </p>
 
-Residuals:
-     Min       1Q   Median       3Q      Max 
--10.6174  -0.3279  -0.0317   0.3014   7.5888 
+        {/* ... (Additional sections) */}
 
-Coefficients:
-              Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -7.026e-02  5.669e-02  -1.239    0.215    
-Open        -4.052e-01  2.299e-02 -17.622   <2e-16 ***
-High         6.522e-01  2.057e-02  31.705   <2e-16 ***
-Low          7.551e-01  1.954e-02  38.634   <2e-16 ***
-Volume       9.695e-10  7.129e-10   1.360    0.174    
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+        <h3>Model Validation and Cautionary Notes</h3>
+        <p>
+          By scrutinizing both the coefficients and the homoskedasticity check, we ensure that our model doesn't succumb to biases stemming from unequal variances. This step enhances the robustness of our predictions and fortifies the foundation of informed trading strategies.
+        </p>
 
-Residual standard error: 0.7163 on 1467 degrees of freedom
-Multiple R-squared:  0.9998,	Adjusted R-squared:  0.9998 
-F-statistic: 1.688e+06 on 4 and 1467 DF,  p-value: < 2.2e-16`}
-      </pre>
+        <h3>Conclusion: A Holistic Approach to Market Insight</h3>
+        <p>
+          Incorporating the homoskedasticity check into our model validation process adds an additional layer of confidence in the reliability of our predictive insights. Traders are encouraged to not only leverage the statistical prowess of the model but also to critically assess its diagnostic results to make well-informed decisions in the dynamic realm of financial markets.
+        </p>
 
-      <h3>Open Price (Negative Impact):</h3>
-      <p>The negative coefficient for the Open price suggests that an increase in the opening price is associated with a decrease in the closing price. This intriguing dynamic invites further exploration. Traders may need to carefully evaluate the implications of early market movements on the day's close.</p>
-
-      <h3>High and Low Prices (Positive Impact):</h3>
-      <p>The coefficients for High and Low prices indicate a positive impact on the closing price. A rise in either the highest or lowest observed price during a trading session corresponds to an increase in the closing price. Traders may find potential opportunities in understanding and capitalizing on these positive correlations.</p>
-
-      <h3>Volume (Minimal Impact):</h3>
-      <p>Interestingly, the Volume variable shows a coefficient with a very small magnitude. This implies that changes in trading volume have a minimal impact on the closing price. While not a significant driver in this model, volume remains a crucial metric for other aspects of market analysis.</p>
-
-      {/* Additional sections... */}
-
-      <h3>Trading Strategies and Risk Management: A Statistical Compass</h3>
-      <p>Armed with these insights, traders can develop and fine-tune their strategies:</p>
-
-      <p><strong>Contrarian Approach to Opening Prices:</strong> The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.</p>
-
-      <p><strong>High-Low Range Trading:</strong> The positive impact of both high and low prices suggests potential for range-based trading strategies. Traders could consider strategies that take advantage of price movements within the high-low range during a trading session.</p>
-
-      <p><strong>Volume as a Secondary Indicator:</strong> While volume may not be a primary driver of closing prices in this model, it remains a vital secondary indicator. Traders can use volume to assess market participation, liquidity, and potential volatility.</p>
-
-      <h3>Model Validation and Cautionary Notes</h3>
-      <p>By scrutinizing both the coefficients and the homoskedasticity check, we ensure that our model doesn't succumb to biases stemming from unequal variances. This step enhances the robustness of our predictions and fortifies the foundation of informed trading strategies.</p>
-
-      <h3>Conclusion: A Holistic Approach to Market Insight</h3>
-      <p>Incorporating the homoskedasticity check into our model validation process adds an additional layer of confidence in the reliability of our predictive insights. Traders are encouraged to not only leverage the statistical prowess of the model but also to critically assess its diagnostic results to make well-informed decisions in the dynamic realm of financial markets.</p>
-
-      <p>Happy trading!</p>
-    </>
-  );
-};
-
-const Work = () => {
-  return (
-    <div className="work-container">
-      <img src={wocktanImage} alt="Blog Cover" className="blog-cover-image" />
-      <h1>Wocktan: Empowering Language Learning</h1>
-
-      <p>
-        Welcome to Wocktan, a cutting-edge platform designed to revolutionize language learning! At Wocktan, we believe in making language acquisition an immersive, engaging, and personalized experience for learners worldwide.
-      </p>
-
-      <h3>Platform Overview:</h3>
-      <p>
-        Wocktan, available at <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a>, provides a comprehensive solution for individuals eager to learn new languages. Our platform is built on the principles of interactivity, accessibility, and effective learning methodologies.
-      </p>
-
-      <h3>Key Features:</h3>
-      <ul>
-        <li><strong>Interactive Lessons:</strong> Dive into dynamic and interactive lessons crafted to enhance language skills.</li>
-        <li><strong>Video Content:</strong> Immerse yourself in authentic language experiences through our rich library of video content.</li>
-        <li><strong>SEO Optimization:</strong> We've implemented robust SEO strategies to ensure Wocktan is easily discoverable by language enthusiasts worldwide.</li>
-        <li><strong>Code Mastery:</strong> Behind the scenes, our team of skilled developers has meticulously coded and developed Wocktan to deliver a seamless learning experience.</li>
-      </ul>
-
-      <h3>Video Production:</h3>
-      <p>
-        Our dedicated team has produced high-quality video content, ranging from instructional materials to captivating language immersion experiences. Every video is thoughtfully curated to provide learners with an authentic and enjoyable learning journey.
-      </p>
-
-      <h3>Get Started:</h3>
-      <p>
-        Ready to embark on your language-learning adventure? Visit <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a> and start exploring the diverse world of languages with Wocktan!
-      </p>
+        <p>Happy trading!</p>
+      </div>
     </div>
   );
 };
+
+
 
 
 
@@ -433,6 +380,50 @@ const Nav = () => {
     </div>
   );
 };
+
+const Work = () => {
+  return (
+    <div className="work-container">
+      <img
+        src={wocktanImage}
+        alt="Blog Cover"
+        className="blog-cover-image"
+        style={{ height: "200px", width: "auto", float: "left", marginRight: "20px" }}
+      />
+      <div className="work-content">
+        <h1>Wocktan: Empowering Language Learning</h1>
+
+        <p>
+          Welcome to Wocktan, a cutting-edge platform designed to revolutionize language learning! At Wocktan, we believe in making language acquisition an immersive, engaging, and personalized experience for learners worldwide.
+        </p>
+
+        <h3>Platform Overview:</h3>
+        <p>
+          Wocktan, available at <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a>, provides a comprehensive solution for individuals eager to learn new languages. Our platform is built on the principles of interactivity, accessibility, and effective learning methodologies.
+        </p>
+
+        <h3>Key Features:</h3>
+        <ul>
+          <li><strong>Interactive Lessons:</strong> Dive into dynamic and interactive lessons crafted to enhance language skills.</li>
+          <li><strong>Video Content:</strong> Immerse yourself in authentic language experiences through our rich library of video content.</li>
+          <li><strong>SEO Optimization:</strong> We've implemented robust SEO strategies to ensure Wocktan is easily discoverable by language enthusiasts worldwide.</li>
+          <li><strong>Code Mastery:</strong> Behind the scenes, our team of skilled developers has meticulously coded and developed Wocktan to deliver a seamless learning experience.</li>
+        </ul>
+
+        <h3>Video Production:</h3>
+        <p>
+          Our dedicated team has produced high-quality video content, ranging from instructional materials to captivating language immersion experiences. Every video is thoughtfully curated to provide learners with an authentic and enjoyable learning journey.
+        </p>
+
+        <h3>Get Started:</h3>
+        <p>
+          Ready to embark on your language-learning adventure? Visit <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a> and start exploring the diverse world of languages with Wocktan!
+        </p>
+      </div>
+    </div>
+  );
+};
+
 
 
 
