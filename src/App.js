@@ -24,7 +24,7 @@ const About = () => {
 Econsensus integrates blockchain for transformative business solutions, reducing costs and fostering trust. We guide businesses to exploit blockchain synergies, gaining a distinctive edge in diverse scenarios. </p>
 
   <p>
-    Complementing our services is a robust digital marketing team that excels in SEO, content marketing, SMM, and mobile development. We assist businesses in expanding their reach, boosting sales, and efficiently engaging with both existing customers and potential clients.
+    Complementing our services is a robust digital marketing team that excels in SEO, content marketing, and mobile development. We assist businesses in expanding their reach, boosting sales, and efficiently engaging with both existing customers and potential clients.
   </p>
 </section>
 
