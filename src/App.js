@@ -6,6 +6,9 @@ import "./App.css"
 import photo1 from "./images/econmetrics.jpg";
 import photo2 from "./images/bitcoin.jpg";
 import photo3 from "./images/dev.jpg";
+import blogImage from './images/stock.png'; // Replace with the actual path to your image
+import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path to your image
+
 const About = () => {
   return (
     <>
@@ -262,6 +265,7 @@ const Home = () => {
 const Blog = () => {
   return (
     <>
+    <img src={blogImage} alt="Blog Cover" className="blog-cover-image" style={{ height: "200px", width: "auto" }}  />
       <h1>Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis</h1>
       <h2>Navigating Trading Strategies with Statistical Precision</h2>
 
@@ -330,6 +334,7 @@ F-statistic: 1.688e+06 on 4 and 1467 DF,  p-value: < 2.2e-16`}
 const Work = () => {
   return (
     <div className="work-container">
+      <img src={wocktanImage} alt="Blog Cover" className="blog-cover-image" />
       <h1>Wocktan: Empowering Language Learning</h1>
 
       <p>

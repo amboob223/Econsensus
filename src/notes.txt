@@ -47,9 +47,9 @@ to get the photos to work we had to import and then feed the source an object an
 
 
         today 
-            -we got to make the blog and works part 
+       
           
-            -we got to make stock photos for both parts 
+           
             -when we get business account we got to switch over subscriptions and get email hosting and make social media shit
             -we got to make the social  media too.
                 blog make it about blockchhaiin type stuff 
@@ -92,3 +92,8 @@ to get the photos to work we had to import and then feed the source an object an
             * econometricans look for causality
      
      make blog part and part for works
+
+     -put images on the side and make selection for blog and works party 
+     -we got to make bcards 
+     -smm
+     -resume

@@ -113,3 +113,23 @@ footer {
   margin: 0 auto;
   padding: 20px;
 }
+.blog-container {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  margin-bottom: 20px; /* Add some margin between blog posts */
+}
+
+.blog-cover-image {
+  height: 200px;
+  width: auto;
+  margin-right: 20px; /* Add some space between the image and content */
+}
+
+.blog-content {
+  flex: 1; /* Take remaining space */
+}
+
+/* Add more styling as needed */
+h1, h2, h3, pre, p, strong {
+  margin-bottom: 10px; /* Add space between elements */
+}
