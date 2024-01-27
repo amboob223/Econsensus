@@ -11,9 +11,9 @@ import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path
 
 const About = () => {
   return (
-    <>
+    <div  style={{"margin":"5%"}}>
     
-      <section>
+      <section >
   <h2>Empowering Decisions</h2>
 
 <p>
@@ -28,7 +28,7 @@ Econsensus integrates blockchain for transformative business solutions, reducing
   </p>
 </section>
 
-    </>
+    </div>
   );
 };
 
@@ -238,7 +238,7 @@ const Scroller = () => {
 
 const Home = () => {
   return (
-    <div className="home-content">
+    <div  style={{"margin-top":"3%"}} className="home-content">
       <img src={econsensusLogo} alt="osh"/>
       <table>
         <tr>
@@ -316,7 +316,7 @@ export const  mogData = [
 const Bone = ({ procs }) => {
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "8px", marginBottom: "20px" }}>
+      <div style={{  display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "8px", marginBottom: "20px" }}>
         <div>
           <img src={procs.img} alt="logo" style={{ height: "200px", width: "auto" }} />
         </div>
@@ -338,13 +338,13 @@ const Bone = ({ procs }) => {
 
 const Blogpage = () => {
   return (
-    <>
+    < div style={{"margin-top":"3%"}}>
 <h1>Blogs</h1> 
     <div style={{"margin-top":"3%"}}>
        <Bone procs={mogData[0]} />
     </div>
      
-    </>
+    </div>
   );
 }
 
@@ -393,7 +393,7 @@ const Nav = () => {
              OurWork
             </Link>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <Link to="/work" className="dropdown-item">
+              <Link to="/workpage" className="dropdown-item">
                 Works
               </Link>
               <div className="dropdown-divider"></div>
@@ -417,48 +417,126 @@ const Nav = () => {
   );
 };
 
-const Work = () => {
+
+export const workData = [
+  {
+    img: wocktanImage,
+    title: "Wocktan: Empowering Language Learning",
+    content: [
+      "Welcome to Wocktan, a cutting-edge platform designed to revolutionize language learning! At Wocktan, we believe in making language acquisition an immersive, engaging, and personalized experience for learners worldwide.",
+      // ... (Additional content)
+    ],
+    features: [
+      "Interactive Lessons: Dive into dynamic and interactive lessons crafted to enhance language skills.",
+      "Video Content: Immerse yourself in authentic language experiences through our rich library of video content.",
+      "SEO Optimization: We've implemented robust SEO strategies to ensure Wocktan is easily discoverable by language enthusiasts worldwide.",
+      "Code Mastery: Behind the scenes, our team of skilled developers has meticulously coded and developed Wocktan to deliver a seamless learning experience.",
+      // ... (Additional features)
+    ],
+    videoProduction: [
+      "Our dedicated team has produced high-quality video content, ranging from instructional materials to captivating language immersion experiences. Every video is thoughtfully curated to provide learners with an authentic and enjoyable learning journey.",
+      // ... (Additional video production content)
+    ],
+    getStarted: "Ready to embark on your language-learning adventure? Visit wocktan.com and start exploring the diverse world of languages with Wocktan!",
+    description:"This App was a request by A person who wanted to expand there textile business in Africa but could not speak the language.Its also inspired by the desire to preserve historic languages."
+                
+  },
+  // ... (Additional work items)
+];
+
+// ... (Other imports)
+
+const Wocktan = ({ data }) => {
   return (
-    <div className="work-container">
+    <div>
       <img
-        src={wocktanImage}
-        alt="Blog Cover"
-        className="blog-cover-image"
+        src={data.img}
+        alt="Work Cover"
+        className="work-cover-image"
         style={{ height: "200px", width: "auto", float: "left", marginRight: "20px" }}
       />
       <div className="work-content">
-        <h1>Wocktan: Empowering Language Learning</h1>
+        <h1>{data.title}</h1>
 
-        <p>
-          Welcome to Wocktan, a cutting-edge platform designed to revolutionize language learning! At Wocktan, we believe in making language acquisition an immersive, engaging, and personalized experience for learners worldwide.
-        </p>
-
-        <h3>Platform Overview:</h3>
-        <p>
-          Wocktan, available at <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a>, provides a comprehensive solution for individuals eager to learn new languages. Our platform is built on the principles of interactivity, accessibility, and effective learning methodologies.
-        </p>
+        {data.content.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
 
         <h3>Key Features:</h3>
         <ul>
-          <li><strong>Interactive Lessons:</strong> Dive into dynamic and interactive lessons crafted to enhance language skills.</li>
-          <li><strong>Video Content:</strong> Immerse yourself in authentic language experiences through our rich library of video content.</li>
-          <li><strong>SEO Optimization:</strong> We've implemented robust SEO strategies to ensure Wocktan is easily discoverable by language enthusiasts worldwide.</li>
-          <li><strong>Code Mastery:</strong> Behind the scenes, our team of skilled developers has meticulously coded and developed Wocktan to deliver a seamless learning experience.</li>
+          {data.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
         </ul>
 
         <h3>Video Production:</h3>
-        <p>
-          Our dedicated team has produced high-quality video content, ranging from instructional materials to captivating language immersion experiences. Every video is thoughtfully curated to provide learners with an authentic and enjoyable learning journey.
-        </p>
+        {data.videoProduction.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
 
         <h3>Get Started:</h3>
-        <p>
-          Ready to embark on your language-learning adventure? Visit <a href="https://wocktan.com" target="_blank" rel="noopener noreferrer">wocktan.com</a> and start exploring the diverse world of languages with Wocktan!
-        </p>
+        <p>{data.getStarted}</p>
       </div>
     </div>
   );
 };
+
+const WorkPlacard = ({ procs, onSelectReadMore }) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "8px", marginBottom: "20px" }}>
+      <div>
+        <img src={procs.img} alt="logo" style={{ height: "200px", width: "auto" }} />
+      </div>
+      <div>
+        <span>{procs.date}</span>
+        <span>{procs.author}</span>
+        <h1 style={{ fontSize: "1.5em", fontWeight: "bold", margin: "10px 0" }}>{procs.title}</h1>
+        <p>{procs.description}</p>
+        <p>
+          <button onClick={onSelectReadMore}>
+            Read more
+          </button>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+const Workpage = () => {
+  const [selectedWork, setSelectedWork] = React.useState(null);
+
+  const handleReadMoreClick = (work) => {
+    setSelectedWork(work);
+  };
+
+  const handleGoBackClick = () => {
+    setSelectedWork(null);
+  };
+
+  return (
+    <div style={{"margin-top":"3%"}}>
+      <h1>Works</h1>
+      {selectedWork ? (
+        <>
+          <Wocktan data={selectedWork} />
+          <button onClick={handleGoBackClick}>Go Back</button>
+        </>
+      ) : (
+        <div style={{ marginTop: "3%" }}>
+          {workData.map((work, index) => (
+            <WorkPlacard key={index} procs={work} onSelectReadMore={() => handleReadMoreClick(work)} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ... (Other routes)
+
+
+// ... (Other components)
+
 
 
 
@@ -475,7 +553,8 @@ function App() {
           <Route path="/help" element={<Help />} />
           <Route path="/blog" element={<Blog data={blogData[0]}/>}/>
           <Route path="/blogpage" element={<Blogpage/>}/>
-          <Route path="/work" element={<Work/>}/>
+        <Route path="/workpage" element={<Workpage />} />
+
         
         </Routes>
       </Router>
