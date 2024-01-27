@@ -243,7 +243,7 @@ const Scroller = () => {
 
 const Home = () => {
   return (
-    <div  style={{"margin-top":"3%"}} className="home-content">
+    <div  style={{"margin-top":"4%", "margin-bottom":"4%"}} className="home-content">
       <img src={econsensusLogo} alt="osh"/>
       <table>
         <tr>
