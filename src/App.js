@@ -326,8 +326,8 @@ const Bone = ({ procs }) => {
           <img src={procs.img} alt="logo" style={{ height: "200px", width: "auto" }} />
         </div>
         <div>
-          <span>{procs.date}</span>
-          <span>{procs.author}</span>
+          <div>{procs.date}</div>
+          <div>{procs.author}</div>
           <h1 style={{ fontSize: "1.5em", fontWeight: "bold", margin: "10px 0" }}>{procs.title}</h1>
           
           <p>
