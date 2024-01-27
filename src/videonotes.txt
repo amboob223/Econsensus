@@ -47,7 +47,7 @@ videonotes
                 -we will acept paypal 
                 -we will accept cash app
                 -we accept cash
-
+                -we set up crypto payments with bitpay and metamask
                 * we keeping track of our revenue by using postgres or excell 
 
 
@@ -78,5 +78,5 @@ videonotes
         blog idea do a report about facebook and when you should invest based off yhe data and econometrics
         or 
 
-        
+
         

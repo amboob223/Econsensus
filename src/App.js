@@ -262,55 +262,91 @@ const Home = () => {
 
 
 
-const Blog = () => {
+
+const blogData = [{
+  title: "Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis",
+  subtitle: "Navigating Trading Strategies with Statistical Precision",
+  content: [
+    "In the fast-paced world of financial markets, every tick and fluctuation in prices can have a profound impact on trading decisions. Traders and investors are constantly on the lookout for tools that can provide meaningful insights into market dynamics, allowing them to make informed decisions.",
+    "In this blog post, we delve into the results of a comprehensive regression analysis conducted on financial data, exploring the relationships between various market indicators and the closing price. The study aims to unlock predictive insights that could guide trading strategies and risk management.",
+    // ... (Rest of your content)
+    "Armed with these insights, traders can develop and fine-tune their strategies:",
+    "<strong>Contrarian Approach to Opening Prices:</strong> The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.",
+    // ... (Additional sections)
+    "By scrutinizing both the coefficients and the homoskedasticity check, we ensure that our model doesn't succumb to biases stemming from unequal variances. This step enhances the robustness of our predictions and fortifies the foundation of informed trading strategies.",
+    "Incorporating the homoskedasticity check into our model validation process adds an additional layer of confidence in the reliability of our predictive insights. Traders are encouraged to not only leverage the statistical prowess of the model but also to critically assess its diagnostic results to make well-informed decisions in the dynamic realm of financial markets.",
+    "Happy trading!"
+  ],
+  image: blogImage,
+}];
+
+const Blog = ({ data }) => {
   return (
     <div className="blog-container">
       <img
-        src={blogImage}
+        src={data.image}
         alt="Blog Cover"
         className="blog-cover-image"
         style={{ height: "200px", width: "auto", float: "left", marginRight: "20px" }}
       />
       <div className="blog-content">
-        <h1>Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis</h1>
-        <h2>Navigating Trading Strategies with Statistical Precision</h2>
+        <h1>{data.title}</h1>
+        <h2>{data.subtitle}</h2>
 
-        <p>
-          In the fast-paced world of financial markets, every tick and fluctuation in prices can have a profound impact on trading decisions. Traders and investors are constantly on the lookout for tools that can provide meaningful insights into market dynamics, allowing them to make informed decisions.
-        </p>
-
-        <p>
-          In this blog post, we delve into the results of a comprehensive regression analysis conducted on financial data, exploring the relationships between various market indicators and the closing price. The study aims to unlock predictive insights that could guide trading strategies and risk management.
-        </p>
-
-        {/* ... (Rest of your content) */}
-
-        <h3>Trading Strategies and Risk Management: A Statistical Compass</h3>
-        <p>
-          Armed with these insights, traders can develop and fine-tune their strategies:
-        </p>
-
-        <p>
-          <strong>Contrarian Approach to Opening Prices:</strong> The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.
-        </p>
-
-        {/* ... (Additional sections) */}
-
-        <h3>Model Validation and Cautionary Notes</h3>
-        <p>
-          By scrutinizing both the coefficients and the homoskedasticity check, we ensure that our model doesn't succumb to biases stemming from unequal variances. This step enhances the robustness of our predictions and fortifies the foundation of informed trading strategies.
-        </p>
-
-        <h3>Conclusion: A Holistic Approach to Market Insight</h3>
-        <p>
-          Incorporating the homoskedasticity check into our model validation process adds an additional layer of confidence in the reliability of our predictive insights. Traders are encouraged to not only leverage the statistical prowess of the model but also to critically assess its diagnostic results to make well-informed decisions in the dynamic realm of financial markets.
-        </p>
-
-        <p>Happy trading!</p>
+        {data.content.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))} 
       </div>
     </div>
   );
 };
+
+
+export const  mogData = [
+  {
+    img:blogImage,
+    date:"01-27-2024",
+    author:"Abdul mboob",
+    title:"Navigating Trading Strategies with Statistical Precision",
+    path:"/blog"
+
+
+}
+]
+const Bone = ({ procs }) => {
+  return (
+    <>
+      <div style={{ display: "flex", flexDirection: "column", border: "1px solid #ccc", padding: "10px", borderRadius: "8px", marginBottom: "20px" }}>
+        <div>
+          <img src={procs.img} alt="logo" style={{ height: "200px", width: "auto" }} />
+        </div>
+        <div>
+          <span>{procs.date}</span>
+          <span>{procs.author}</span>
+          <h1 style={{ fontSize: "1.5em", fontWeight: "bold", margin: "10px 0" }}>{procs.title}</h1>
+          
+          <p>
+            <Link to={procs.path}>
+              Read more
+            </Link>
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+const Blogpage = () => {
+  return (
+    <>
+<h1>Blogs</h1> 
+    <div style={{"margin-top":"3%"}}>
+       <Bone procs={mogData[0]} />
+    </div>
+     
+    </>
+  );
+}
 
 
 
@@ -361,7 +397,7 @@ const Nav = () => {
                 Works
               </Link>
               <div className="dropdown-divider"></div>
-              <Link to="/blog" className="dropdown-item">
+              <Link to="/blogpage" className="dropdown-item">
                 Blog
               </Link>
               
@@ -426,7 +462,6 @@ const Work = () => {
 
 
 
-
 function App() {
   return (
     <div>
@@ -438,7 +473,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/blog" element={<Blog data={blogData[0]}/>}/>
+          <Route path="/blogpage" element={<Blogpage/>}/>
           <Route path="/work" element={<Work/>}/>
         
         </Routes>
