@@ -93,17 +93,35 @@ to get the photos to work we had to import and then feed the source an object an
      
      
         -got to make the payments
-                -stripe,bitpay,metamask
+                bitpay,
+                metamask,
+
+                - i want to make the payments just small icons
+
+
         -fix the margins on blog and add 
                     graphs 
                     and data 
                     and sources on all reports also grpahics make look nice like accentures
+
+        -eventually need to straignten out the components and fix enviroment varibales 
 
 
      -smm:twitter,insta,tiktok
      -resume:
 
      -we need to make a payment page and a page 
+
+        -these off days 
+            -do all payments
+            -learn some R 
+            - make smm
+            -get domain name together or at least fix margins and stock photos
+            -resume
+            -plan content to shoot and for page
+
+
+
   
             blockchain economist 
                 What is the duties of a blockchain economist 
