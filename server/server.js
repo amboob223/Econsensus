@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+require('dotenv').config();
 
 //middleware
 app.use(cors());
@@ -16,6 +17,50 @@ app.post("/help",async(req,res)=>{
     res.json(data.rows[0]);
  
 })
+
+const storeItems = new Map([
+    [ 1, {priceInCents:10000, name:"Econometrics"}],
+    [2,{priceInCents:10000, name:"Blockchain Dev"}],
+      [3,{priceInCents:10000, name:"Business Dev"}]
+])
+
+
+app.post("/create-checkout-session", async (req, res) => {
+  const { items } = req.body;
+
+  try {
+    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+
+    const lineItems = items.map(item => {
+      const storeItem = storeItems.get(item.id);
+      return {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name: storeItem.name,
+            // You can add more details to the product_data if needed
+          },
+          unit_amount: storeItem.priceInCents,
+        },
+        quantity: item.quantity,
+      };
+    });
+
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      line_items: lineItems,
+      mode: "payment",
+      success_url: "http://localhost:5000/success.html",
+      cancel_url: "http://localhost:5000/cancel.html",
+    });
+
+    res.json({ id: session.id });
+  } catch (error) {
+    console.error("Error creating checkout session:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
 
 app.listen("5000",()=>{
     console.log("server Works")

@@ -8,6 +8,11 @@ import photo2 from "./images/bitcoin.jpg";
 import photo3 from "./images/dev.jpg";
 import blogImage from './images/stock.png'; // Replace with the actual path to your image
 import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path to your image
+import { loadStripe } from '@stripe/stripe-js';
+
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+
+
 
 const About = () => {
   return (
@@ -53,6 +58,101 @@ const handleInputChange = (e) => {
      // in the setformdata we give it an object it uses the spread operatorto 
      //repeat the value of the formdata and we erapolate from the varible the name as the key 
      // 
+
+     //stripe
+     const ECheckoutClick = async () => {
+    try {
+      const stripe = await stripePromise;
+
+      const response = await fetch('http://localhost:5000/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify({
+          items: [
+            { id: 1, quantity: 1 }, // Replace with the correct item IDs and quantities
+          ],
+        }),
+      });
+
+      if (response.ok) {
+        const session = await response.json();
+        const result = await stripe.redirectToCheckout({
+          sessionId: session.id,
+        });
+
+        if (result.error) {
+          console.error(result.error.message);
+        }
+      } else {
+        console.error('Failed to create checkout session');
+      }
+    } catch (error) {
+      console.error('Error handling checkout:', error);
+    }
+  };
+
+  const BCheckoutClick = async () => {
+    try {
+      const stripe = await stripePromise;
+
+      const response = await fetch('http://localhost:5000/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify({
+          items: [
+            { id: 2, quantity: 1 }, // Replace with the correct item IDs and quantities
+          ],
+        }),
+      });
+
+      if (response.ok) {
+        const session = await response.json();
+        const result = await stripe.redirectToCheckout({
+          sessionId: session.id,
+        });
+
+        if (result.error) {
+          console.error(result.error.message);
+        }
+      } else {
+        console.error('Failed to create checkout session');
+      }
+    } catch (error) {
+      console.error('Error handling checkout:', error);
+    }
+  };
+
+  const BBCheckoutClick = async () => {
+    try {
+      const stripe = await stripePromise;
+
+      const response = await fetch('http://localhost:5000/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-type': 'application/json' },
+        body: JSON.stringify({
+          items: [
+            { id: 3, quantity: 1 }, // Replace with the correct item IDs and quantities
+          ],
+        }),
+      });
+
+      if (response.ok) {
+        const session = await response.json();
+        const result = await stripe.redirectToCheckout({
+          sessionId: session.id,
+        });
+
+        if (result.error) {
+          console.error(result.error.message);
+        }
+      } else {
+        console.error('Failed to create checkout session');
+      }
+    } catch (error) {
+      console.error('Error handling checkout:', error);
+    }
+  };
+
 
 
 
@@ -102,21 +202,35 @@ const handleInputChange = (e) => {
   <p>
     Harness the power of advanced data collection, survey creation,econometric models, and comprehensive economic reports to help you make the most informed decison everytime.
   </p>
-
+<button className="btn btn-success" onClick={ECheckoutClick}>
+          Checkout for Econometrics
+        </button>
   <h3>Blockchain Solutions Tailored for Your Business</h3>
   <p>
     Explore the potential of blockchain with our feasibility and use case studies. Identify specific applications for your business, and let our experts develop custom DAOs, DApps, custom tokens, or NFTs. Leverage the transformative capabilities of smart contracts and blockchain technology to enhance operational efficiency and security.
   </p>
-
+  <button className="btn btn-success" onClick={BCheckoutClick}>
+          Checkout for Blockchain Solutions
+        </button>
   <h3>Holistic Business Development Services</h3>
   <p>
     Propel your business forward with our comprehensive web development, SEO, social media management (SMM), and content marketing solutions. From building a strong online presence to executing successful marketing campaigns, our business development offerings are designed to enhance your brand visibility and drive growth.
   </p>
-
-  <p>
+    <button className="btn btn-success" onClick={BBCheckoutClick}>
+          Checkout for Business Development Services
+        </button>
+<br>
+</br>
+<div>
+   <p>
 Our services are designed to empower your company, fostering innovation, efficiency, and sustained success in today's dynamic market.
     Please feel free to complete the form and a representative will be with you shortly.
   </p>
+</div>
+ 
+  
+      
+      
 </section>
 
     
@@ -276,7 +390,7 @@ const blogData = [{
     "In this blog post, we delve into the results of a comprehensive regression analysis conducted on financial data, exploring the relationships between various market indicators and the closing price. The study aims to unlock predictive insights that could guide trading strategies and risk management.",
     // ... (Rest of your content)
     "Armed with these insights, traders can develop and fine-tune their strategies:",
-    "<strong>Contrarian Approach to Opening Prices:</strong> The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.",
+    "Contrarian Approach to Opening Prices: The negative impact of the opening price invites a contrarian approach. Traders might explore opportunities to act against the initial market sentiment, strategically leveraging the observed negative relationship.",
     // ... (Additional sections)
     "By scrutinizing both the coefficients and the homoskedasticity check, we ensure that our model doesn't succumb to biases stemming from unequal variances. This step enhances the robustness of our predictions and fortifies the foundation of informed trading strategies.",
     "Incorporating the homoskedasticity check into our model validation process adds an additional layer of confidence in the reliability of our predictive insights. Traders are encouraged to not only leverage the statistical prowess of the model but also to critically assess its diagnostic results to make well-informed decisions in the dynamic realm of financial markets.",
