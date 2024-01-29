@@ -64,7 +64,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('http://localhost:5000/create-checkout-session', {
+      const response = await fetch('/.netlify/functions/create-checkout-session', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
