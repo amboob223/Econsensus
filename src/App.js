@@ -10,7 +10,7 @@ import blogImage from './images/stock.png'; // Replace with the actual path to y
 import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path to your image
 import { loadStripe } from '@stripe/stripe-js';
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
 
 
