@@ -10,7 +10,7 @@ import blogImage from './images/stock.png'; // Replace with the actual path to y
 import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path to your image
 import { loadStripe } from '@stripe/stripe-js';
 
-const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
 
 
 
@@ -205,6 +205,20 @@ const handleInputChange = (e) => {
 <button className="btn btn-success" onClick={ECheckoutClick}>
           Checkout for Econometrics
         </button>
+       
+
+   
+      <button  className="btn btn-warning">
+        <a class="buy-with-crypto"
+        href="https://commerce.coinbase.com/checkout/0c0d43cb-056c-45a9-9783-1dae8d8e2686">
+        Buy with Crypto
+      </a>
+      <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+      </script>
+      </button>
+      
+    
+
   <h3>Blockchain Solutions Tailored for Your Business</h3>
   <p>
     Explore the potential of blockchain with our feasibility and use case studies. Identify specific applications for your business, and let our experts develop custom DAOs, DApps, custom tokens, or NFTs. Leverage the transformative capabilities of smart contracts and blockchain technology to enhance operational efficiency and security.
@@ -212,6 +226,21 @@ const handleInputChange = (e) => {
   <button className="btn btn-success" onClick={BCheckoutClick}>
           Checkout for Blockchain Solutions
         </button>
+   
+    
+      <button  className="btn btn-warning">
+         <a class="buy-with-crypto"
+        href="https://commerce.coinbase.com/checkout/79ae64ac-73e6-41ce-852f-8f9f612ce0ee">
+        Buy with Crypto
+      </a>
+      <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+      </script>
+      </button>
+     
+    
+   
+
+
   <h3>Holistic Business Development Services</h3>
   <p>
     Propel your business forward with our comprehensive web development, SEO, social media management (SMM), and content marketing solutions. From building a strong online presence to executing successful marketing campaigns, our business development offerings are designed to enhance your brand visibility and drive growth.
@@ -219,8 +248,22 @@ const handleInputChange = (e) => {
     <button className="btn btn-success" onClick={BBCheckoutClick}>
           Checkout for Business Development Services
         </button>
+
+    <button className="btn btn-warning">
+       <a class="buy-with-crypto"
+        href="https://commerce.coinbase.com/checkout/5fdd83e6-315d-4847-910c-3b2f3e75ba19">
+        Buy with Crypto
+      </a>
+      <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807">
+      </script>
+  
+    </button>
+     
+
 <br>
 </br>
+<br/>
+
 <div>
    <p>
 Our services are designed to empower your company, fostering innovation, efficiency, and sustained success in today's dynamic market.

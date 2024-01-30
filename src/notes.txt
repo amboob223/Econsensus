@@ -121,6 +121,8 @@ to get the photos to work we had to import and then feed the source an object an
             -plan content to shoot and for page
 
 
+npm.js is a website with all the npm packages and docs on tehre
+
 
   
             blockchain economist 
