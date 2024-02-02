@@ -12,8 +12,8 @@ import Workpage from "./components/Workpage";
 function App() {
   return (
     <div>
-      <Router>
-        <header>
+      <header>
+        <Router>
           <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -22,11 +22,10 @@ function App() {
             <Route path="/blogpage" element={<Blogpage />} />
             <Route path="/workpage" element={<Workpage />} />
           </Routes>
-        </header>
-      </Router>
+        </Router>
+      </header>
 
       <footer>
-        <div>©Econsensus 2024</div>
         <Contacts />
       </footer>
     </div>
