@@ -5,12 +5,19 @@ import "./App.css";
 import Nav from "./components/Nav.js";
 import blogImage from './images/stock.png'; // Replace with the actual path to your image
 import wocktanImage from './images/wocktan.jpg'; // Replace with the actual path to your image
-import { loadStripe } from '@stripe/stripe-js';
+import Contacts from "./components/Contacts";
+import About from "./components/About";
+import Help from "./components/Help";
+import Home from "./components/Home";
 
-const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
 
 
+<<<<<<< HEAD
+
+
+
+=======
 const About = () => {
   return (
     <div  style={{"margin":"5%"}}>
@@ -205,7 +212,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
     
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/0c0d43cb-056c-45a9-9783-1dae8d8e2686">
         Buy with Crypto
       </a>
@@ -224,7 +231,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
    
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/79ae64ac-73e6-41ce-852f-8f9f612ce0ee">
         Buy with Crypto
       </a>
@@ -243,7 +250,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
     
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/5fdd83e6-315d-4847-910c-3b2f3e75ba19">
         Buy with Crypto
       </a>
@@ -340,16 +347,17 @@ Our services are designed to empower your company, fostering innovation, efficie
 
 const Contacts = () => {
   return <><ul>
-        <li>Twitter<i class="fa-brands fa-instagram"></i></li>
-        <li>Linkedin<i class="fa-brands fa-linkedin"></i></li>
-        <li>Tiktok<i class="fa-brands fa-tiktok"></i></li>
-        <li>instagram<i class="fa-brands fa-instagram"></i></li>
+        <li>Twitter<i className="fa-brands fa-instagram"></i></li>
+        <li>Linkedin<i className="fa-brands fa-linkedin"></i></li>
+        <li>Tiktok<i className="fa-brands fa-tiktok"></i></li>
+        <li>instagram<i className="fa-brands fa-instagram"></i></li>
 
     </ul>
     
     </>;
 
 };
+>>>>>>> origin/master
 
 //im about to make a component for the scorller that will show some stock phitos and they 
 //will describe some of the services and things we have done 
