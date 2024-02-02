@@ -1,3 +1,18 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+today 
+    -do a econ report in entirty getting info from the app 
+    -fix margins and pages on site so we can get data form an obkect
+        -add otehr stock photos i guess that will go in object.
+
+    -organize components
+    -fix g site
+    -read 4 chapters and take notes
+    -resume
+tonnight 
+    -make question sheet for me to streamline econ preprocessing
+    -make a checksheet to verify work solid
+
+
+
+later this weej 
+    -domain name 
+    -server hosting

@@ -1,0 +1,56 @@
+Define Question
+Read Existing material 
+forumulate hypothesis
+identify Data sources
+explore and preprocess the data?
+choose the model like diffrence in diffence,propensity score matching, instrucmental varible analysis
+estimate the model 
+evaluate the goodness of fit by looking at r2 to see how close it is to observeed value
+do hypthesis test to test significance of coeeficents this lets you know if you cN REject null hypthesis
+verify models 4 assumtions:linearity,normality of errors,independence of errors,homoskedacity
+Interpret the coefficents and the overall practaicallity in the model 
+do a sensitity Analysis
+13. Present and Communicate Results: -Prepare a clear and concise presentation of your findings. Clearly communicate the   
+                                      methodology, results, and implications for the dog grooming business.
+                                    
+                                    14. Draw Conclusions:
+Based on your analysis, draw conclusions about the causal relationship between the 10-year interest rate and the revenue of the dog grooming business. Discuss limitations and potential areas for future research.
+
+
+steps for customer facing report 
+
+
+
+    1. Introduction:
+Briefly introduce the purpose of the study.
+Describe the dataset and variables used in the analysis.
+2. Data Description:
+Provide an overview of the dataset, including the sample size, variable descriptions, and any data preprocessing steps.
+3. Model Specification:
+Present the regression model used, including the dependent variable, independent variable(s), and any assumptions made.
+Highlight the significance of the model in the context of the research question.
+4. Regression Results:
+Display the coefficients, standard errors, t-values, and p-values for each variable in the model.
+Interpret the coefficients, especially focusing on the policy_change variable.
+5. Residual Analysis:
+Discuss the residuals and their implications.
+Check for heteroscedasticity, normality, and other assumptions.
+6. R-squared and Model Fit:
+Interpret the Multiple R-squared and Adjusted R-squared values.
+Discuss the overall fit of the model.
+7. Scatter Plot and Regression Line:
+Present the scatter plot with the regression line.
+Discuss any visual patterns or insights observed.
+8. Conclusion:
+Summarize the main findings and their significance.
+Discuss the limitations of the analysis.
+Suggest areas for further research.
+9. Recommendations:
+If applicable, provide recommendations based on the analysis.
+Appendices:
+Include additional details, code snippets, or supplementary information.
+References:
+List any references or sources used in the analysis.
+
+Remember to use clear language, tables, and visualizations to enhance the readability of the report. Adjust the content and structure based on the specific details of your analysis and the requirements of your client.
+

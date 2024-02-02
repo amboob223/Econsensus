@@ -192,3 +192,19 @@ Meta-analysis:
 
 If feasible, consider combining results from multiple studies through meta-analysis. This can enhance statistical power and provide more reliable estimates.
 It's important to note that while these strategies can help address some limitations associated with smaller sample sizes, researchers should always be transparent about the study's limitations and cautious in making broad generalizations. The appropriateness of these techniques depends on the specific research context and the nature of the study.
+
+econometric study a micro and macro analysis report and powerpoint 
+
+
+to dos this Week till the 6th
+- make social media
+-render hosting and domain name
+-read mastering bitcoin up to chapter 4
+-I see now we need to make a general 
+    page for each service that takes props
+    so all we got to do id change the data 
+-make questionaire to help me when doing study
+-do a report every night 
+-do some alvhmy bootcamp too 
+
+- I think I want to make a presentation too an in it use grpahs to descripe the blockchain for instance make a graph showing the deflationary nature of bitocin over time 
