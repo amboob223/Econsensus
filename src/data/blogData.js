@@ -1,3 +1,5 @@
+import blogImage from "../images/stock.png";
+
 
 const blogData = [{
   title: "Unveiling Market Dynamics: Predictive Insights from Financial Regression Analysis",
@@ -16,4 +18,4 @@ const blogData = [{
   image: blogImage,
 }];
 
-export default blogData
+export default blogData;

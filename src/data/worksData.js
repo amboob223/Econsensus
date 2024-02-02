@@ -1,4 +1,6 @@
-export const workData = [
+import wocktanImage from "../images/wocktan.jpg"
+
+const worksData = [
   {
     img: wocktanImage,
     title: "Wocktan: Empowering Language Learning",
@@ -25,3 +27,4 @@ export const workData = [
 ];
 
 // ... (Other imports)
+export default worksData;
