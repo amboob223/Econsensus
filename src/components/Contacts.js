@@ -7,10 +7,9 @@ const Contacts = () => {
       <div>
           ©Econsensus 2024
         </div>    
-        <li>Twitter
-          <a class ="whiu" href="https://twitter.com/Econsensus1">
-          <i class="fa-brands fa-instagram"></i> </a></li>
-       
+        <a class ="whiu" href="https://twitter.com/Econsensus1"><li>Twitter
+          <i class="fa-brands fa-instagram"></i></li>
+        </a>
         <a  class ="whiu" href="https://www.linkedin.com/in/amboob223/">
           <li>Linkedin<i class="fa-brands fa-linkedin"></i></li>
      
