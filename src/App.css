@@ -131,7 +131,24 @@ footer {
   margin-top: 3%;
 }
 
+/* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+
+  /* Adjust content padding for smaller screens */
+  main {
+    padding: 10px;
+  }
+}
+
 /* Add more styling as needed */
 h1, h2, h3, pre, p, strong {
   margin-bottom: 10px; /* Add space between elements */
 }
+
