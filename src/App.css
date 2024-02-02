@@ -39,6 +39,10 @@ a {
   color: black;
 }
 
+.mog>a{
+  color:white
+}
+
 a:hover {
   color: #007bff;
 }
@@ -145,10 +149,24 @@ footer {
   main {
     padding: 10px;
   }
-}
 
-/* Add more styling as needed */
+  nav {
+    /* Add styles to make the navigation more mobile-friendly */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+  }
+}
+* Add more styling as needed */
 h1, h2, h3, pre, p, strong {
   margin-bottom: 10px; /* Add space between elements */
+}
+
+/* Update specificity for the .whiu a selector */
+.whiu a {
+  color: white !important; /* Use !important to ensure higher specificity */
 }
 
