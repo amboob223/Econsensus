@@ -1,8 +1,12 @@
 import React from "react";
 import "../App.css";
 const Contacts = () => {
-  return <><ul className="mog">
-        
+  return <>
+
+  <ul className="mog">
+      <div>
+          ©Econsensus 2024
+        </div>    
         <a class ="whiu" href="https://twitter.com/Econsensus1"><li>Twitter<i class="fa-brands fa-instagram"></i></li>
         </a>
         <a  class ="whiu" href="https://www.linkedin.com/in/amboob223/">
