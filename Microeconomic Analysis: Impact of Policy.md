@@ -25,3 +25,6 @@ Additional microeconomic factors, such as inmate preferences or external economi
 Further microeconomic analysis is recommended to identify specific factors influencing revenue, such as inmate preferences, pricing strategies, or market conditions within the jail environment.
 Qualitative research, surveys, or interviews with inmates may provide insights into individual preferences and decision-making.
 Feel free to adapt and expand upon this template based on your specific findings and the context of your analysis.
+
+
+Econometric analyses, especially observational studies, often focus on understanding relationships between variables rather than establishing a causal link.

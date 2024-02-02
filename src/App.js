@@ -9,7 +9,7 @@ import Home from "./components/Home";
 import Blogpage from "./components/Blogpage";
 import Workpage from "./components/Workpage";
 
-function App() {
+const App = () => {
   return (
     <div>
       <header>

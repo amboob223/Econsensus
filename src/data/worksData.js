@@ -22,7 +22,7 @@ const worksData = [
     getStarted: "Ready to embark on your language-learning adventure? Visit wocktan.com and start exploring the diverse world of languages with Wocktan!",
     description:"This App was a request by A person who wanted to expand there textile business in Africa but could not speak the language.Its also inspired by the desire to preserve historic languages."
                 
-  },
+  }
   // ... (Additional work items)
 ];
 
