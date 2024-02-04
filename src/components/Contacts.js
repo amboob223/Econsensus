@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+
 const Contacts = () => {
   return <div>
 
@@ -10,10 +11,10 @@ const Contacts = () => {
         <a href="https://twitter.com/Econsensus1"><li>Twitter
           <i className="fa-brands fa-instagram"></i></li>
         </a>
-        <li> <a   href="https://www.linkedin.com/in/amboob223/">
+       <a> <li>    href="https://www.linkedin.com/in/amboob223/"
          Linkedin<i className="fa-brands fa-linkedin"></i>
      
-          </a></li>  
+          </li> </a> 
           <a href="https://www.tiktok.com/@econsensus">
              <li>Tiktok<i className="fa-brands fa-tiktok"></i></li>
           </a>
