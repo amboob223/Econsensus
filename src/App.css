@@ -1,14 +1,14 @@
 /* App.css */
+
 body {
-  background-color: #25323f; /* Dark blue background color */
-  color: #fffff4; /* White text color */
-  font-family: 'Roboto', sans-serif; /* Use a Google Font or any other preferred font */
-  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
-  margin: 0; /* Remove default margin */
+  background-color: #25323f;
+  color: #fffff4;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
-
 
 nav {
   display: flex;
@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-  width: 100px; /* Adjust the width for a professional size */
+  width: 100px;
   height: auto;
 }
 
@@ -39,14 +39,13 @@ a {
   color: black;
 }
 
-.mog>a{
-  color:white
+.mog > a {
+  color: white;
 }
 
 a:hover {
   color: #007bff;
 }
-/* Add these styles to your existing CSS file or create a new one */
 
 .help-container {
   display: flex;
@@ -54,104 +53,97 @@ a:hover {
   margin: 3%;
 }
 
-.help-container>p{
+.help-container > p {
   text-indent: 5%;
 }
 
-
-
-
 header {
-  flex-grow: 1; /* Allow the header to take up the remaining vertical space */
+  flex-grow: 1;
 }
 
 section {
   flex: 1;
-  margin: 0 auto; /* Center the section horizontally */
-  max-width: 800px; /* Set a maximum width for better readability */
-  padding: 20px; /* Add padding for spacing inside the section */
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
 }
+
 .home-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50vh; /* Ensure the content takes up at least the full height of the viewport */
-  max-width: 50%; /* Set the maximum width to be half of the viewport width */
-  margin: 0 auto; /* Center the content horizontally */
+  min-height: 50vh;
+  max-width: 50%;
+  margin: 0 auto;
 }
+
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10vh; /* Adjust as needed */
+  min-height: 10vh;
   background-color: #1d242f;
 }
-/* styles.css */
 
 .larger-text {
   font-size: 2em;
 }
 
 .button-container {
-  margin-top: 20px; /* Adjust the top margin as needed */
+  margin-top: 20px;
 }
 
-/* Additional styling if necessary */
 .btn {
-  margin-right: 10px; /* Adjust the right margin as needed */
+  margin-right: 10px;
 }
+
 .blog-post {
-  color: #333; /* Adjust text color as needed */
+  color: #333;
 }
 
 .blog-post pre {
   color: white;
-  background-color: #333; /* Set background color for better readability */
+  background-color: #333;
   padding: 10px;
   overflow-x: auto;
 }
+
 .work-container {
-  color: #fbf9f9; /* Adjust text color as needed */
-  max-width: 800px; /* Adjust the maximum width to your design preference */
+  color: #fbf9f9;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   margin-top: 3%;
 }
+
 .blog-container {
   display: flex;
-  align-items: center; /* Vertically center items */
-  margin-bottom: 20px; /* Add some margin between blog posts */
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .blog-cover-image {
   height: 200px;
   width: auto;
-  margin-right: 20px; /* Add some space between the image and content */
+  margin-right: 20px;
 }
 
 .blog-content {
-  flex: 1; /* Take remaining space */
+  flex: 1;
   margin-top: 3%;
 }
 
-/* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
-  header {
+  header, footer {
     padding: 10px;
   }
 
-  footer {
-    padding: 5px;
-  }
-
-  /* Adjust content padding for smaller screens */
   main {
     padding: 10px;
   }
 
   nav {
-    /* Add styles to make the navigation more mobile-friendly */
     position: fixed;
     top: 0;
     left: 0;
@@ -160,11 +152,10 @@ footer {
     z-index: 1000;
   }
 }
-* Add more styling as needed */
+
+/* Add more styling as needed */
 h1, h2, h3, pre, p, strong {
-  margin-bottom: 10px; /* Add space between elements */
+  margin-bottom: 10px;
 }
 
 /* Update specificity for the .whiu a selector */
-
-
