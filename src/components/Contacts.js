@@ -8,18 +8,18 @@ const Contacts = () => {
           ©Econsensus 2024
         </div>    
         <a href="https://twitter.com/Econsensus1"><li>Twitter
-          <i class="fa-brands fa-instagram"></i></li>
+          <i className="fa-brands fa-instagram"></i></li>
         </a>
         <li> <a   href="https://www.linkedin.com/in/amboob223/">
-         Linkedin<i class="fa-brands fa-linkedin"></i>
+         Linkedin<i className="fa-brands fa-linkedin"></i>
      
           </a></li>  
           <a href="https://www.tiktok.com/@econsensus">
-             <li>Tiktok<i class="fa-brands fa-tiktok"></i></li>
+             <li>Tiktok<i className="fa-brands fa-tiktok"></i></li>
           </a>
 
           <a href="https://www.instagram.com/econsensus1/">
-                  <li>instagram<i class="fa-brands fa-instagram"></i></li>
+                  <li>instagram<i className="fa-brands fa-instagram"></i></li>
           </a>
      
     </ul>
