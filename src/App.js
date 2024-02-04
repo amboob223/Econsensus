@@ -25,9 +25,9 @@ const App = () => {
         </Router>
       </header>
 
-      <footer>
+      
         <Contacts />
-      </footer>
+      
     </div>
   );
 }
