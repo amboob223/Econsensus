@@ -7,18 +7,18 @@ const Contacts = () => {
       <div>
           ©Econsensus 2024
         </div>    
-        <a class ="whiu" href="https://twitter.com/Econsensus1"><li>Twitter
+        <a className ="whiu" href="https://twitter.com/Econsensus1"><li>Twitter
           <i class="fa-brands fa-instagram"></i></li>
         </a>
-        <a  class ="whiu" href="https://www.linkedin.com/in/amboob223/">
+        <a  className ="whiu" href="https://www.linkedin.com/in/amboob223/">
           <li>Linkedin<i class="fa-brands fa-linkedin"></i></li>
      
           </a>  
-          <a id ="whiu" href="https://www.tiktok.com/@econsensus">
+          <a ClassName ="whiu" href="https://www.tiktok.com/@econsensus">
              <li>Tiktok<i class="fa-brands fa-tiktok"></i></li>
           </a>
 
-          <a class ="whiu" href="https://www.instagram.com/econsensus1/">
+          <a className ="whiu" href="https://www.instagram.com/econsensus1/">
                   <li>instagram<i class="fa-brands fa-instagram"></i></li>
           </a>
      
