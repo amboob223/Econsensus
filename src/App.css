@@ -166,7 +166,5 @@ h1, h2, h3, pre, p, strong {
 }
 
 /* Update specificity for the .whiu a selector */
-.whiu a {
-  color: white !important; /* Use !important to ensure higher specificity */
-}
+
 
