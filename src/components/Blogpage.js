@@ -7,7 +7,7 @@ const Blogpage = () => {
 <h1>Blogs</h1> 
     <div style={{"margin-top":"3%"}}>
        <Bone procs={mogData[0]} />
-       //this is where we make blogs here 
+     
     </div>
      
     </div>
