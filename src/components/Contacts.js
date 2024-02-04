@@ -1,30 +1,30 @@
 import React from "react";
 import "../App.css";
 const Contacts = () => {
-  return <>
+  return <div>
 
   <ul className="mog">
       <div>
           ©Econsensus 2024
         </div>    
-        <a class ="whiu" href="https://twitter.com/Econsensus1"><li>Twitter
+        <a  href="https://twitter.com/Econsensus1"><li>Twitter
           <i class="fa-brands fa-instagram"></i></li>
         </a>
-        <a  class ="whiu" href="https://www.linkedin.com/in/amboob223/">
+        <a   href="https://www.linkedin.com/in/amboob223/">
           <li>Linkedin<i class="fa-brands fa-linkedin"></i></li>
      
           </a>  
-          <a id ="whiu" href="https://www.tiktok.com/@econsensus">
+          <a  href="https://www.tiktok.com/@econsensus">
              <li>Tiktok<i class="fa-brands fa-tiktok"></i></li>
           </a>
 
-          <a class ="whiu" href="https://www.instagram.com/econsensus1/">
+          <a href="https://www.instagram.com/econsensus1/">
                   <li>instagram<i class="fa-brands fa-instagram"></i></li>
           </a>
      
     </ul>
     
-    </>;
+    </div>;
 
 };
 
