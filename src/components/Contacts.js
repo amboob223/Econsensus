@@ -7,14 +7,14 @@ const Contacts = () => {
       <div>
           ©Econsensus 2024
         </div>    
-        <a  href="https://twitter.com/Econsensus1"><li>Twitter
+        <a href="https://twitter.com/Econsensus1"><li>Twitter
           <i class="fa-brands fa-instagram"></i></li>
         </a>
-        <a   href="https://www.linkedin.com/in/amboob223/">
-          <li>Linkedin<i class="fa-brands fa-linkedin"></i></li>
+        <li> <a   href="https://www.linkedin.com/in/amboob223/">
+         Linkedin<i class="fa-brands fa-linkedin"></i>
      
-          </a>  
-          <a  href="https://www.tiktok.com/@econsensus">
+          </a></li>  
+          <a href="https://www.tiktok.com/@econsensus">
              <li>Tiktok<i class="fa-brands fa-tiktok"></i></li>
           </a>
 
