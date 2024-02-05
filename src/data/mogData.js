@@ -5,7 +5,7 @@ const  mogData = [
     date:"01-27-2024",
     author:"Abdul mboob",
     title:"Navigating Trading Strategies with Statistical Precision",
-    path:"/blog"
+    path:"/blogpage"
 
 
 }
