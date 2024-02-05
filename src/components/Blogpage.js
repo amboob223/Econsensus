@@ -1,6 +1,6 @@
 import Bone from "./Bone";
 import mogData from "../data/mogData";
-
+import React from "react";
 const Blogpage = () => {
   return (
     < div style={{"margin-top":"3%"}}>

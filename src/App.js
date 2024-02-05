@@ -7,9 +7,8 @@ import Help from "./components/Help";
 import Home from "./components/Home";
 import Blogpage from "./components/Blogpage";
 import Workpage from "./components/Workpage";
-import Blog from "./components/Blog";
-
-
+import data from "./data/blogData"
+import Blog from "./components/Blog"
 
 
 const Contacts = () => {
@@ -53,7 +52,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/help" element={<Help />} />
-            <Route path ="/blog" element ={<Blog/>}/>
+            <Route path="/blog" element={<Blog data ={data[0]}/>}/>
             <Route path="/blogpage" element={<Blogpage />} />
             <Route path="/workpage" element={<Workpage />} />
           </Routes>

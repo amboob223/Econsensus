@@ -1,4 +1,5 @@
 import blogImage from "../images/stock.png"
+
 const  mogData = [
   {
     img:blogImage,
