@@ -123,36 +123,37 @@ const handleInputChange = (e) => {
 
 
 
-  const handleSubmit = async(e) => {
-    try {
-      e.preventDefault();
-      const response = await fetch("https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/help",{
-        method:"POST",
-        headers:{"Content-type":"Application/json"},
-        body:JSON.stringify(formData)
-      })
-        if (response.ok) {
+  const handleSubmit = async (e) => {
+  try {
+    e.preventDefault();
+    const response = await fetch("https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/help", {
+      method: "POST",
+      headers: { "Content-type": "Application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
       // Handle success, e.g., show a success message or redirect
       console.log('Form submitted successfully');
-      alert("we will get back with you shortly")
+      alert("We will get back to you shortly");
     } else {
       // Handle errors, e.g., show an error message
-      console.error('Form submission failed');
+      console.error('Form submission failed:', response.statusText);
     }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+  } catch (error) {
+    console.error('Error submitting form:', error.message);
+  }
 
-    setFormData({
-      name:"",
-    phone:"",
-    email:"",
-    industry:"",
-    bproblem:""
-    })
-    
-    
-  };
+  // Reset the form data regardless of success or failure
+  setFormData({
+    name: "",
+    phone: "",
+    email: "",
+    industry: "",
+    bproblem: "",
+  });
+};
+
 
   return <>
   
