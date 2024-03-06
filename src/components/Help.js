@@ -31,7 +31,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('http://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
+      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -62,7 +62,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('http://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
+      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -93,7 +93,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('http://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
+      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/create-checkout-session', {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -126,7 +126,7 @@ const handleInputChange = (e) => {
   const handleSubmit = async(e) => {
     try {
       e.preventDefault();
-      const response = await fetch("http://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/help",{
+      const response = await fetch("https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/help",{
         method:"POST",
         headers:{"Content-type":"Application/json"},
         body:JSON.stringify(formData)
@@ -237,7 +237,7 @@ Our services are designed to empower your company, fostering innovation, efficie
 </section>
 
     
-       <form action="http://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/help" onSubmit={handleSubmit}>
+       <form action="https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:5000/help" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
