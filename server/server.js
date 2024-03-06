@@ -51,7 +51,7 @@ app.post("/create-checkout-session", async (req, res) => {
       line_items: lineItems,
       mode: "payment",
       success_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/success.html",
-      cancel_url: "https ://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/cancel.html",
+      cancel_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/cancel.html",
     });
 
     res.json({ id: session.id });
@@ -61,7 +61,8 @@ app.post("/create-checkout-session", async (req, res) => {
   }
 });
 
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+        console.log("class")
+    })
 
-app.listen("5000",()=>{
-    console.log("server Works")
-})
