@@ -50,8 +50,8 @@ app.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:3000/success.html",
-      cancel_url: "https ://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com:3000/cancel.html",
+      success_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/success.html",
+      cancel_url: "https ://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/cancel.html",
     });
 
     res.json({ id: session.id });
