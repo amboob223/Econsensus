@@ -3,10 +3,16 @@ const app = express();
 const cors = require("cors");
 const pool = require("./db");
 require('dotenv').config();
+// Allow only requests from your frontend origin
+const corsOptions = {
+  origin: 'https://econsensus.app',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
 
-//middleware
-app.use(cors());
+// middleware
+app.use(cors(corsOptions));
 app.use(express.json());
+
 
 app.post("/help",async(req,res)=>{
     const {name,phone,email,industry,bproblem} = req.body;

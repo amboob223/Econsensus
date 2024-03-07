@@ -4,7 +4,6 @@ import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
-const URL = "https://econsensus.onrender.com"
 const Help = () => {
   const [formData,setFormData] = useState({
     name:"",
