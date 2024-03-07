@@ -28,3 +28,5 @@ Feel free to adapt and expand upon this template based on your specific findings
 
 
 Econometric analyses, especially observational studies, often focus on understanding relationships between variables rather than establishing a causal link.
+
+c

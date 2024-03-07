@@ -29,7 +29,7 @@ const handleInputChange = (e) => {
      //stripe
      const ECheckoutClick = async () => {
     try {
-      const stripe = await stripePromise;
+      const stripe = await stripePromise();
 
       const response = await fetch(`https://${URL}/create-checkout-session`, {
         method: 'POST',
@@ -176,7 +176,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
     
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/0c0d43cb-056c-45a9-9783-1dae8d8e2686">
         Buy with Crypto
       </a>
@@ -195,7 +195,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
    
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/79ae64ac-73e6-41ce-852f-8f9f612ce0ee">
         Buy with Crypto
       </a>
@@ -214,7 +214,7 @@ const handleInputChange = (e) => {
         <button className="btn btn-warning">
 
     
-      <a class="buy-with-crypto"
+      <a className="buy-with-crypto"
         href="https://commerce.coinbase.com/checkout/5fdd83e6-315d-4847-910c-3b2f3e75ba19">
         Buy with Crypto
       </a>
