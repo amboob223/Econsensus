@@ -7,13 +7,8 @@ const pool = require("./db");
 app.use(cors({ origin: 'https://econsensus.app' }));
 app.use(express.json());
 
+
 // CORS headers middleware
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://econsensus.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
 
 
 // middleware
