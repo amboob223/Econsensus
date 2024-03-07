@@ -46,7 +46,7 @@ app.post("/create-checkout-session", async (req, res) => {
   const { items } = req.body;
 
   try {
-    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const stripe = require('stripe')("sk_test_51Od38iLYxzXgDlcwP4TJW5BWiKbByLGGoPCutNkXGxOJ1iss4yQtDLrAwwldjAIunJh9qlXb9SbtOLgJAFYJG81p00c6ODTUsQ");
 
     const lineItems = items.map(item => {
       const storeItem = storeItems.get(item.id);
