@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
-require('dotenv').config();
+
 // Allow only requests from your frontend origin
 const corsOptions = {
   origin: 'https://econsensus.app',
