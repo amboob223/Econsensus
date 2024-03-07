@@ -18,6 +18,11 @@ app.post("/help",async(req,res)=>{
  
 })
 
+
+app.get("/", (req, res) => {
+    res.send("hello")
+})
+
 const storeItems = new Map([
     [ 1, {priceInCents:10000, name:"Econometrics"}],
     [2,{priceInCents:10000, name:"Blockchain Dev"}],
