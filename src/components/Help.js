@@ -238,7 +238,7 @@ Our services are designed to empower your company, fostering innovation, efficie
 </section>
 
     
-       <form action={`https://econsensus.onrender.com/help`} onSubmit={handleSubmit}>
+       <form action="https://econsensus.onrender.com/help" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
