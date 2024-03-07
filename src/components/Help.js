@@ -5,6 +5,7 @@ import { loadStripe } from '@stripe/stripe-js';
 const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
 const URL = "https://econsensus.onrender.com"
+
 const Help = () => {
   const [formData,setFormData] = useState({
     name:"",
@@ -28,12 +29,14 @@ const handleInputChange = (e) => {
 
      //stripe
      const ECheckoutClick = async () => {
+
     try {
+      
       const stripe = await stripePromise;
 
       const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
-        headers: { 'Content-type': 'application/json' },
+        
         body: JSON.stringify({
           items: [
             { id: 1, quantity: 1 }, // Replace with the correct item IDs and quantities
@@ -64,7 +67,7 @@ const handleInputChange = (e) => {
 
       const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
-        headers: { 'Content-type': 'application/json' },
+        
         body: JSON.stringify({
           items: [
             { id: 2, quantity: 1 }, // Replace with the correct item IDs and quantities
@@ -95,7 +98,7 @@ const handleInputChange = (e) => {
 
       const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
-        headers: { 'Content-type': 'application/json' },
+        
         body: JSON.stringify({
           items: [
             { id: 3, quantity: 1 }, // Replace with the correct item IDs and quantities
@@ -128,7 +131,7 @@ const handleInputChange = (e) => {
     e.preventDefault();
     const response = await fetch(`https://econsensus.onrender.com/help`, {
       method: "POST",
-      headers: { "Content-type": "Application/json" },
+      
       body: JSON.stringify(formData),
     });
 
