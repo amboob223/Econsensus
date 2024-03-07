@@ -29,7 +29,7 @@ const handleInputChange = (e) => {
      //stripe
      const ECheckoutClick = async () => {
     try {
-      const stripe = await stripePromise();
+      const stripe = await stripePromise;
 
       const response = await fetch(`https://${URL}/create-checkout-session`, {
         method: 'POST',
