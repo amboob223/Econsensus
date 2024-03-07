@@ -1,7 +1,7 @@
 const POOL = require("pg").Pool;
 const pool = new POOL({
-    connectionString: "postgres://econsensus_user:3kkOxuBGbc3AIMixgep2qlgWNqUQ6MF9@dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/econsensus",
-      ssl: {
+    connectionString: "postgres://monk:vwAzwGkadcVMGxr3mMJ2btDrlUK7fcWe@dpg-cnki566n7f5s73b08glg-a.oregon-postgres.render.com/econ_1h2k",
+     ssl: {
         rejectUnauthorized: false
     }
 
