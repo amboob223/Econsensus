@@ -31,7 +31,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch(`https://${URL}/create-checkout-session`, {
+      const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -62,7 +62,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch(`https://${URL}/create-checkout-session`, {
+      const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -93,7 +93,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch(`https://${URL}/create-checkout-session`, {
+      const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -126,7 +126,7 @@ const handleInputChange = (e) => {
   const handleSubmit = async (e) => {
   try {
     e.preventDefault();
-    const response = await fetch(`https://${URL}/help`, {
+    const response = await fetch(`https://econsensus.onrender.com/help`, {
       method: "POST",
       headers: { "Content-type": "Application/json" },
       body: JSON.stringify(formData),
@@ -238,7 +238,7 @@ Our services are designed to empower your company, fostering innovation, efficie
 </section>
 
     
-       <form action={`https://${URL}/help`} onSubmit={handleSubmit}>
+       <form action={`https://econsensus.onrender.com/help`} onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
