@@ -93,7 +93,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch(`https://${URL}/create-checkout-session`, {
+      const response = await fetch(`https://econsensus.onrender.com/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
