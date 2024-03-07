@@ -4,10 +4,14 @@ const cors = require("cors");
 const pool = require("./db");
 
 // Allow only requests from your frontend origin
-app.use(cors({ origin: 'https://econsensus.app' }));
-app.use(express.json());
+const corsOptions = {
+  origin: 'https://econsensus.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
 
-
+app.use(cors(corsOptions));
 // CORS headers middleware
 
 
