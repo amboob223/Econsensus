@@ -4,7 +4,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
-
+const URL = "https://econsensus.onrender.com"
 const Help = () => {
   const [formData,setFormData] = useState({
     name:"",
@@ -31,7 +31,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render/create-checkout-session', {
+      const response = await fetch(`https://${URL}/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -62,7 +62,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/create-checkout-session', {
+      const response = await fetch(`https://${URL}/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -93,7 +93,7 @@ const handleInputChange = (e) => {
     try {
       const stripe = await stripePromise;
 
-      const response = await fetch('https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/create-checkout-session', {
+      const response = await fetch(`https://${URL}/create-checkout-session`, {
         method: 'POST',
         headers: { 'Content-type': 'application/json' },
         body: JSON.stringify({
@@ -126,7 +126,7 @@ const handleInputChange = (e) => {
   const handleSubmit = async (e) => {
   try {
     e.preventDefault();
-    const response = await fetch("https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/help", {
+    const response = await fetch(`https://${URL}/help`, {
       method: "POST",
       headers: { "Content-type": "Application/json" },
       body: JSON.stringify(formData),
@@ -238,7 +238,7 @@ Our services are designed to empower your company, fostering innovation, efficie
 </section>
 
     
-       <form action="https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/help" onSubmit={handleSubmit}>
+       <form action={`https://${URL}/help`} onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
