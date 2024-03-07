@@ -11,7 +11,7 @@ app.use(express.json());
 app.post("/help",async(req,res)=>{
     const {name,phone,email,industry,bproblem} = req.body;
     const data = await pool.query(
-    "INSERT INTO help( name,phone,email,industry,bproblem) VALUES($1,$2,$3,$4,$5) RETURNING *",
+    "INSERT INTO help(name,phone,email,industry,bproblem) VALUES($1,$2,$3,$4,$5) RETURNING *",
     [name,phone,email,industry,bproblem]
         ) 
     res.json(data.rows[0]);
@@ -55,8 +55,8 @@ app.post("/create-checkout-session", async (req, res) => {
       payment_method_types: ["card"],
       line_items: lineItems,
       mode: "payment",
-      success_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/success.html",
-      cancel_url: "https://dpg-cnkcck6d3nmc73e70qv0-a.oregon-postgres.render.com/cancel.html",
+      success_url: "https://econsensus.onrender.com/success.html",
+      cancel_url: "https://econsensus.onrender.com/cancel.html",
     });
 
     res.json({ id: session.id });
