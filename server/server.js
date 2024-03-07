@@ -12,7 +12,9 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
+app.use(express.json());
 // CORS headers middleware
+
 
 
 // middleware
