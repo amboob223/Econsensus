@@ -4,6 +4,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
 
+const URL = "https://econsensus.onrender.com"
 const Help = () => {
   const [formData,setFormData] = useState({
     name:"",
@@ -127,10 +128,9 @@ const handleInputChange = (e) => {
     e.preventDefault();
     const response = await fetch(`https://econsensus.onrender.com/help`, {
       method: "POST",
-
       body: JSON.stringify(formData),
     });
-//
+
     if (response.ok) {
       // Handle success, e.g., show a success message or redirect
       console.log('Form submitted successfully');
@@ -237,7 +237,6 @@ Our services are designed to empower your company, fostering innovation, efficie
 </section>
 
     
-       <form action="https://econsensus.onrender.com/help" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
@@ -299,7 +298,7 @@ Our services are designed to empower your company, fostering innovation, efficie
             rows={4}
           />
         </div>
-        <button  className = "btn btn-warning" type="submit">
+        <button  className = "btn btn-warning" type="submit" id="btn">
           Submit
         </button>
       </form>
