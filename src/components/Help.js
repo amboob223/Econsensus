@@ -127,7 +127,7 @@ const handleInputChange = (e) => {
     e.preventDefault();
     const response = await fetch(`https://econsensus.onrender.com/help`, {
       method: "POST",
-      headers: { "Content-type": "Application/json" },
+
       body: JSON.stringify(formData),
     });
 
