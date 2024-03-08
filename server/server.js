@@ -3,46 +3,48 @@ const app = express();
 const cors = require("cors");
 const pool = require("./db");
 
-// Allow only requests from your frontend origin
-
-
+// CORS settings
+const corsOptions = {
+  origin: 'https://econsensus.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+};
 app.use(cors());
 app.use(express.json());
-// CORS headers middleware
+app.use('/help', cors(corsOptions));
 
-
-
-// middleware
-
-
-
-
-app.post("/help",async(req,res)=>{
-    const {name,phone,email,industry,bproblem} = req.body;
-    const data = await pool.query(
-    "INSERT INTO help(name,phone,email,industry,bproblem) VALUES($1,$2,$3,$4,$5) RETURNING *",
-    [name,phone,email,industry,bproblem]
-        ) 
-    res.json(data.rows[0]);
- 
-})
-
-
-app.get("/", (req, res) => {
-    res.send("hello")
-})
-
-const storeItems = new Map([
-    [ 1, {priceInCents:10000, name:"Econometrics"}],
-    [2,{priceInCents:10000, name:"Blockchain Dev"}],
-      [3,{priceInCents:10000, name:"Business Dev"}]
-])
-
-
-app.post("/create-checkout-session", async (req, res) => {
-  const { items } = req.body;
-
+// Route for inserting help data
+app.post("/help", async (req, res) => {
   try {
+    const { name, phone, email, industry, bproblem } = req.body;
+    const data = await pool.query(
+      "INSERT INTO help(name, phone, email, industry, bproblem) VALUES($1, $2, $3, $4, $5) RETURNING *",
+      [name, phone, email, industry, bproblem]
+    );
+    res.json(data.rows[0]);
+  } catch (error) {
+    console.error("Error inserting help data:", error);
+    res.status(500).send("Internal Server Error");
+  }
+});
+
+// Default route
+app.get("/", (req, res) => {
+  res.send("hello");
+});
+
+// Map for store items
+const storeItems = new Map([
+  [1, { priceInCents: 10000, name: "Econometrics" }],
+  [2, { priceInCents: 10000, name: "Blockchain Dev" }],
+  [3, { priceInCents: 10000, name: "Business Dev" }]
+]);
+
+// Route for creating checkout session
+app.post("/create-checkout-session", async (req, res) => {
+  try {
+    const { items } = req.body;
     const stripe = require('stripe')("sk_test_51Od38iLYxzXgDlcwP4TJW5BWiKbByLGGoPCutNkXGxOJ1iss4yQtDLrAwwldjAIunJh9qlXb9SbtOLgJAFYJG81p00c6ODTUsQ");
 
     const lineItems = items.map(item => {
@@ -52,7 +54,7 @@ app.post("/create-checkout-session", async (req, res) => {
           currency: "usd",
           product_data: {
             name: storeItem.name,
-            // You can add more details to the product_data if needed
+            // Add more details to product_data if needed
           },
           unit_amount: storeItem.priceInCents,
         },
@@ -75,8 +77,7 @@ app.post("/create-checkout-session", async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-        console.log("class")
-    })
-
+  console.log("Server is running on port", PORT);
+});
