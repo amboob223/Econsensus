@@ -130,7 +130,7 @@ const handleInputChange = (e) => {
 
       body: JSON.stringify(formData),
     });
-
+//
     if (response.ok) {
       // Handle success, e.g., show a success message or redirect
       console.log('Form submitted successfully');
