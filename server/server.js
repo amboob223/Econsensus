@@ -5,11 +5,12 @@ const pool = require("./db");
 
 // CORS settings
 const corsOptions = {
-  origin: 'https://econsensus.app',
+  origin: ['https://econsensus.app', 'https://econsensus.onrender.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
 };
+
 app.use(cors());
 app.use(express.json());
 app.use('/help', cors(corsOptions));

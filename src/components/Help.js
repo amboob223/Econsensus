@@ -125,12 +125,13 @@ const handleInputChange = (e) => {
   const handleSubmit = async (e) => {
   try {
     e.preventDefault();
+    console.log(formData)
     const response = await fetch(`https://econsensus.onrender.com/help`, {
       method: "POST",
       headers:{"Content-type":"application/json"},
       body: JSON.stringify(formData),
     });
-
+console.log(response)
     if (response.ok) {
       // Handle success, e.g., show a success message or redirect
       console.log('Form submitted successfully');
