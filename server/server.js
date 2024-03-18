@@ -46,7 +46,7 @@ const storeItems = new Map([
 app.post("/create-checkout-session", async (req, res) => {
   try {
     const { items } = req.body;
-    const stripe = require('stripe')("sk_test_51Od38iLYxzXgDlcwP4TJW5BWiKbByLGGoPCutNkXGxOJ1iss4yQtDLrAwwldjAIunJh9qlXb9SbtOLgJAFYJG81p00c6ODTUsQ");
+    const stripe = require('stripe')("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");
 
     const lineItems = items.map(item => {
       const storeItem = storeItems.get(item.id);
