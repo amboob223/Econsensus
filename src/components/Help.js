@@ -2,7 +2,7 @@ import {React,useState} from "react";
 import { loadStripe } from '@stripe/stripe-js';
 
 
-const stripePromise = loadStripe("pk_test_51Od38iLYxzXgDlcw7O1YAHla6vvYavDll3IWvVlR2afP7RtD2MQ4TiZ1CTT1P6ZWfHFOLdelqHK1GQvLbyEkrD0j00aczd4JTs");
+const stripePromise = loadStripe("pk_live_51Od38iLYxzXgDlcwi5dzE50twIVcbpE68ghk5cKRF5F4ZUvSvrEKH7LfCbvnx0WZenUVvnLQcH7bNW7Lax4KfOZd00OhImCtIP");
 
 const Help = () => {
   const [formData,setFormData] = useState({
