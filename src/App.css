@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
   background-color: #25323f;
   color: #fffff4;
@@ -58,7 +56,8 @@ a:hover {
 }
 
 header {
-  flex-grow: 1;
+  background-color: #1d242f;
+  color: white;
 }
 
 section {
@@ -158,4 +157,19 @@ h1, h2, h3, pre, p, strong {
   margin-bottom: 10px;
 }
 
-/* Update specificity for the .whiu a selector */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+  color: white; /* Text color */
+  padding: 20px; /* Padding around the caption */
+   max-width: 800px;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Add background color to #root */
+#root {
+  background-color: #25323f;
+}

@@ -18,8 +18,85 @@ the longer unemployed as devb lower likley hood
                 *the sob stories wont work 
 
 
+    *indepedent child evaluations
+        -if they think he reading diosabled you can request a school psychologist and school pays for it 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+    
+        <div className="form-group">
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            className="form-control"
+            id="name"
+            value={formData.name}
+            onChange={handleInputChange}
+            placeholder="Name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="phone">Phone:</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+             className="form-control"
+            value={formData.phone}
+            onChange={handleInputChange}
+            placeholder="Phone"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+             className="form-control"
+            value={formData.email}
+            onChange={handleInputChange}
+            placeholder="Email"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="industry">Industry:</label>
+          <input
+            type="text"
+            name="industry"
+            id="industry"
+             className="form-control"
+            value={formData.industry}
+            onChange={handleInputChange}
+            placeholder="Industry"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="bproblem">Business Problem:</label>
+          <textarea
+            type="text"
+            name="bproblem"
+            id="bproblem"
+            value={formData.bproblem}
+             className="form-control"
+            onChange={handleInputChange}
+            placeholder="Business Problem"
+            rows={4}
+          />
+        </div>
+        <button  className = "btn btn-warning" type="submit" id="btn">
+          Submit
+        </button>
