@@ -161,7 +161,9 @@ h1, h2, h3, pre, p, strong {
   background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
   color: white; /* Text color */
   padding: 20px; /* Padding around the caption */
-   max-width: 800px;
+   width: '100%';
+   text-align: center;
+   position: 'absolute';
 }
 
 .carousel-caption h3,
