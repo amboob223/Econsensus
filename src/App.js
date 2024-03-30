@@ -41,7 +41,7 @@ const Contacts = () => {
   );
 };
 
-function Success(){
+const Success = () => {
     
     return(
             <div>
@@ -60,7 +60,7 @@ function Success(){
     </div>)
 }
 
-function Cancel(){
+const Cancel = () =>{
     return(
             <div>
 <div>   
