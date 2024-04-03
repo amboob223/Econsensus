@@ -10,6 +10,8 @@ import Workpage from "./components/Workpage";
 import data from "./data/blogData"
 import Blog from "./components/Blog"
 import econsensusLogo from "./images/Econsensus.png"
+import Success from "./components/Success"
+import Cancel from "./components/Cancel"
 
 const Contacts = () => {
   return (
