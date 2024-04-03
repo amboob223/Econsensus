@@ -7,7 +7,7 @@ function Cancel(){
     return(<div>
             <div>
 
-                <img src={logo} style={{width:"50px"}}/>
+                <img src={logo} alt="whoop" style={{width:"50px"}}/>
                 <Link to="/">Home</Link>
 
                 <h1>
