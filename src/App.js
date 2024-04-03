@@ -9,7 +9,7 @@ import Blogpage from "./components/Blogpage";
 import Workpage from "./components/Workpage";
 import data from "./data/blogData"
 import Blog from "./components/Blog"
-import econsensusLogo from "./images/Econsensus.png"
+
 import Success from "./components/Success"
 import Cancel from "./components/Cancel"
 
@@ -43,40 +43,7 @@ const Contacts = () => {
   );
 };
 
-const Success = () => {
-    
-    return(
-            <div>
-<div>   
-  
-     </div>
 
-                <img src={econsensusLogo} alt="jjj" style={{width:"300px"}}/>
-            <div>
-                <Link to="/">Home</Link>
-                <h1>
-                    You have sucessfully paid.
-                    
-                </h1>
-            </div>
-    </div>)
-}
-
-const Cancel = () =>{
-    return(
-            <div>
-<div>   
-     </div>
-                <img src={econsensusLogo} alt="th" style={{width:"300px"}}/>
-            <div>
-                <Link to="/">Home</Link>
-                <h1>
-                    Your transaction did not go through, Sorry.
- 
-                </h1>
-            </div>
-    </div>)
-}
 
 
 
