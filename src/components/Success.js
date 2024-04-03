@@ -11,7 +11,7 @@ function Success(){
   
      </div>
 
-                <img src={logo} style={{width:"300px"}}/>
+                <img src={logo} alt="whoop" style={{width:"300px"}}/>
             <div>
                 <Link to="/">Home</Link>
                 <h1>
