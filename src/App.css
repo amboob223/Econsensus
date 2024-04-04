@@ -3,9 +3,9 @@ body {
   color: #fffff4;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  max-height: max-content
+
+ ;
 }
 
 nav {
@@ -18,7 +18,7 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -133,25 +133,6 @@ footer {
   margin-top: 3%;
 }
 
-@media (max-width: 768px) {
-  header, footer {
-    padding: 10px;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1000;
-  }
-}
-
 /* Add more styling as needed */
 h1, h2, h3, pre, p, strong {
   margin-bottom: 10px;
@@ -174,4 +155,38 @@ h1, h2, h3, pre, p, strong {
 /* Add background color to #root */
 #root {
   background-color: #25323f;
+}
+tbody{
+     display:flex;
+    flex-direction: row;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-container table {
+    width: 100%;
+  }
+
+  .table-container td {
+    padding: 0;
+  }
+
+  .table-container .carousel-container {
+    margin-top: 20px;
+  }
+}
+
+/* Additional styling for font size */
+p {
+  font-size: 1.3em; /* Increase font size */
+  margin-bottom: 8px; /* Reduce spacing between paragraphs */
+}
+
+.large-text {
+  font-size: 3.5em; /* Increase font size */
 }
