@@ -1,6 +1,8 @@
+
+
 body {
   background-color: #25323f;
-  color: #fffff4;
+ 
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   max-height: max-content
@@ -15,6 +17,10 @@ nav {
   padding: 7px 20px;
   background-color: #f0f0f0;
   text-align: center;
+}
+
+form{
+  margin: 3%;
 }
 
 .logo {
@@ -48,12 +54,15 @@ a:hover {
 .help-container {
   display: flex;
   min-height: 50vh;
-  margin: 3%;
+
+  margin-top: 3%;
 }
 
 .help-container > p {
   text-indent: 5%;
+
 }
+
 
 header {
   background-color: #1d242f;
@@ -72,9 +81,13 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
+  min-height: 80vh;
   max-width: 50%;
-  margin: 0 auto;
+  margin:  auto;
+  
+  
+
+ 
 }
 
 footer {
@@ -91,6 +104,7 @@ footer {
 
 .button-container {
   margin-top: 20px;
+
 }
 
 .btn {
@@ -120,6 +134,7 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+   min-height: 80vh;
 }
 
 .blog-cover-image {
@@ -163,9 +178,12 @@ tbody{
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
+
+
   tbody {
     display: flex;
     flex-direction: column;
+    font-size:0.5 em ;
   }
 
   .table-container table {
@@ -179,7 +197,42 @@ tbody{
   .table-container .carousel-container {
     margin-top: 20px;
   }
+
+  .help-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section>p{
+    font-size: medium;
+  }
+  section>button{
+    size: 75%;
+  }
+
+  section{
+   
+    width: 80%;
+  }
+
+  section>h3{
+    margin-top: 3%;
+    margin-bottom:3%;
+  }
+
+  .home-content{
+    margin-top:4%;
+  }
+
+
+  #navbarSupportedContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Change from column to row */
+    align-items: center; /* Optional: align items in the center horizontally */
+  }
 }
+
 
 /* Additional styling for font size */
 p {

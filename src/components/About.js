@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div  style={{"margin":"5%"}}>
+    <div  style={{"margin":"5%" , "min-height": "80vh"}}>
     
       <section >
   <h2>Empowering Decisions</h2>

@@ -16,7 +16,7 @@ const Workpage = () => {
   };
 
   return (
-    <div style={{ marginTop: "3%" }}>
+    <div style={{ marginTop: "3%" ,  "min-height": "80vh"}}>
       <h1>Works</h1>
       {selectedWork ? (
         <>

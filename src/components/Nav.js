@@ -6,7 +6,7 @@ const Nav = () => {
   return (<div >
 
  
-    <nav  style={{ marginRight: '10px', justifyContent:"space-between" }} className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="whoop"  style={{ marginRight: '10px', justifyContent:"space-between" }} className="navbar navbar-expand-lg navbar-light bg-light">
      
          <Link to="/">
         <img src={econsensusLogo} alt="smasg" className="logo" />

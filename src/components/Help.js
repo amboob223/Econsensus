@@ -163,7 +163,7 @@ console.log(response)
   
     <section>
   <h2>Econsensus helps with..</h2>
-  <br/>
+
  
 
   <h3>Elevated Decision-Making through Data-Driven Insights</h3>
@@ -237,7 +237,9 @@ Our services are designed to empower your company, fostering innovation, efficie
       
 </section>
 
+
     <form onSubmit={handleSubmit}>
+      <h1> Let us Help </h1>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
