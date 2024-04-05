@@ -5,7 +5,7 @@ import CarouselFadeExample from "./ExampleCarouselImage";
 const Home = () => {
   return (
     <div className="home-content">
-      <img src={econsensusLogo} alt="Econsensus Logo" className="logo" />
+      <img src={econsensusLogo} alt="Econsensus Logo" className="logol" />
       <div className="table-container">
         <table>
           <tbody>

@@ -26,7 +26,14 @@ form{
 .logo {
   width: 200px;
   height: auto;
+  
 }
+.logol{
+  width: 300px;
+  height: auto;
+  
+}
+
 
 ul {
   list-style: none;
@@ -147,7 +154,9 @@ footer {
   flex: 1;
   margin-top: 3%;
 }
-
+.mog>div{
+  color: white;
+}
 /* Add more styling as needed */
 h1, h2, h3, pre, p, strong {
   margin-bottom: 10px;

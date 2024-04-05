@@ -1,10 +1,10 @@
 import React from "react";
-
+import "../App.css"
 const About = () => {
   return (
-    <div  style={{"margin":"5%" , "min-height": "80vh"}}>
+    <div  style={{"min-height": "80vh"}}>
     
-      <section >
+      <section style={{"margin-top":"3%" }}>
   <h2>Empowering Decisions</h2>
 
 <p>
