@@ -1,8 +1,8 @@
 import React from "react";
-import Wocktan from "./Wocktan";
 import Cutrap from "./Cuttrap"; // Import the Cutrap component
 import WorkPlacard from "./WorkPlacard";
 import workData from "../data/worksData";
+import BlockReview from "./blockreview";
 
 const Workpage = () => {
   const [selectedWork, setSelectedWork] = React.useState(null);
@@ -16,7 +16,7 @@ const Workpage = () => {
   };
 
   return (
-    <div style={{ marginTop: "3%" ,  "min-height": "80vh"}}>
+    <div style={{ marginTop: "3%", minHeight: "80vh" }}>
       <h1>Works</h1>
       {selectedWork ? (
         <>
@@ -24,14 +24,18 @@ const Workpage = () => {
           {selectedWork.title === "Cutrap: Simplifying Barber Booth Booking" ? (
             <Cutrap data={selectedWork} />
           ) : (
-            <Wocktan data={selectedWork} />
+            <BlockReview data={selectedWork} />
           )}
           <button onClick={handleGoBackClick}>Go Back</button>
         </>
       ) : (
         <div style={{ marginTop: "3%" }}>
           {workData.map((work, index) => (
-            <WorkPlacard key={index} procs={work} onSelectReadMore={() => handleReadMoreClick(work)} />
+            <WorkPlacard
+              key={index}
+              procs={work}
+              onSelectReadMore={() => handleReadMoreClick(work)}
+            />
           ))}
         </div>
       )}
