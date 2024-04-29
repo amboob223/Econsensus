@@ -181,6 +181,13 @@ tbody{
     flex-direction: row;
 }
 
+
+.navbar-toggler {
+  display: none;
+}
+
+
+
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
 
@@ -215,7 +222,16 @@ tbody{
     size: 75%;
   }
 
-  
+    .navbar-collapse {
+    display: none; /* Hide the collapsed navbar by default */
+  }
+  .navbar-toggler{
+    display: block;
+  }
+
+  .nav-open .navbar-collapse {
+    display: block; /* Show the collapsed navbar when nav-open class is present */
+  }
 
   section>h3{
     margin-top: 3%;
